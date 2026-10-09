@@ -1,1 +1,1 @@
-pycryptodome>=3.19.0
+# Standard library only (Python 3.9+). No pip packages required.

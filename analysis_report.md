@@ -96,7 +96,7 @@ After normalization the chunk is standard Lua 5.1 and parses cleanly:
 1. Header/entropy forensics (Python).
 2. Format ID against MTA `IsLuaObfuscatedScript` / `IsLuaCompiledScript`.
 3. Trailer parser reversed from `netc.dll` `DeobfuscateScript`.
-4. RSA-512 public-key transform (pycryptodome `pow`).
+4. RSA-512 public-key transform (stdlib `pow` / `int.from_bytes`).
 5. LuaQ normalizer (crypt table, XOR code blocks, NOP strip).
 6. Custom Lua 5.1 undump + disassembly (`artifacts/disassembly.txt`).
 7. Manual CFG reconstruction of all 40 prototypes.

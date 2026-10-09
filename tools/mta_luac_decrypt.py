@@ -11,7 +11,18 @@ import struct
 import sys
 from pathlib import Path
 
-from Crypto.Util.number import bytes_to_long, long_to_bytes
+
+def bytes_to_long(data: bytes) -> int:
+    return int.from_bytes(data, "big")
+
+
+def long_to_bytes(value: int, length: int) -> bytes:
+    if value < 0:
+        raise ValueError("negative RSA integer")
+    try:
+        return int(value).to_bytes(length, "big")
+    except OverflowError as exc:
+        raise ValueError(f"RSA integer does not fit in {length} bytes") from exc
 
 SIGNED_MAGIC = 0xF14A55B7
 HEADER_SIZE = 93

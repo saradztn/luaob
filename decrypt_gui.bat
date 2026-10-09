@@ -22,8 +22,7 @@ exit /b 1
 :end
 if errorlevel 1 (
   echo.
-  echo If you saw a pycryptodome error, run:
-  echo     pip install pycryptodome
+  echo The GUI failed to start. Python 3.9+ is required. No pip packages needed.
   echo.
   pause
 )

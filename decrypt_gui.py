@@ -300,13 +300,9 @@ class DecryptApp(tk.Tk):
         self.log.tag_configure("muted", foreground=MUTED)
 
     def _warn_import(self) -> None:
-        self._log("مكتبة pycryptodome غير مثبتة. نفّذ:", "err")
-        self._log("    pip install pycryptodome", "warn")
+        self._log("تعذر تحميل أداة الفك (المكتبة القياسية فقط، بدون pip):", "err")
         self._log(str(IMPORT_ERROR), "muted")
-        messagebox.showerror(
-            "مكتبة ناقصة",
-            "ثبّت pycryptodome أولاً:\n\npip install pycryptodome",
-        )
+        messagebox.showerror("خطأ", f"تعذر تحميل أداة الفك:\n\n{IMPORT_ERROR}")
 
     def _log(self, text: str, tag: str | None = None) -> None:
         self.log.configure(state="normal")
