@@ -15,9 +15,11 @@ sys.path.insert(0, str(ROOT / "tools"))
 
 try:
     from mta_luac_decrypt import decrypt_mta_luac, normalize_luaq
+    from lua51_decompile import decompile_chunk
 except ImportError as exc:  # pragma: no cover - shown in the UI
     decrypt_mta_luac = None  # type: ignore[assignment]
     normalize_luaq = None  # type: ignore[assignment]
+    decompile_chunk = None  # type: ignore[assignment]
     IMPORT_ERROR = exc
 else:
     IMPORT_ERROR = None
@@ -80,8 +82,9 @@ class DecryptApp(tk.Tk):
         self.files: list[Path] = []
         self.busy = False
         self.output_var = tk.StringVar(value="")
-        self.save_raw = tk.BooleanVar(value=True)
-        self.normalize = tk.BooleanVar(value=True)
+        self.save_raw = tk.BooleanVar(value=False)
+        self.normalize = tk.BooleanVar(value=False)
+        self.decompile_src = tk.BooleanVar(value=True)
         self._build()
         if IMPORT_ERROR is not None:
             self.after(200, self._warn_import)
@@ -104,7 +107,7 @@ class DecryptApp(tk.Tk):
         ).pack(fill="x")
         tk.Label(
             header,
-            text="اختر ملف .luac مشفّر (علامة 0x1C) ثم اضغط Decrypt — الناتج يُحفظ في مجلد.",
+            text="اختر ملف .luac مشفّر ثم Decrypt — الناتج سورس Lua (.lua) وليس بايت كود.",
             bg=BG,
             fg=MUTED,
             font=self._font(10),
@@ -211,8 +214,8 @@ class DecryptApp(tk.Tk):
         opts.pack(fill="x", padx=12, pady=(0, 12))
         tk.Checkbutton(
             opts,
-            text="تطبيع LuaQ (ملف Lua 5.1 قياسي)",
-            variable=self.normalize,
+            text="سورس Lua (.lua)  —  هذا اللي تحتاجه",
+            variable=self.decompile_src,
             bg=PANEL,
             fg=FG,
             selectcolor=FIELD,
@@ -223,7 +226,19 @@ class DecryptApp(tk.Tk):
         ).pack(side="left")
         tk.Checkbutton(
             opts,
-            text="حفظ ناتج RSA الخام أيضاً",
+            text="حفظ البايت كود بعد LuaQ",
+            variable=self.normalize,
+            bg=PANEL,
+            fg=FG,
+            selectcolor=FIELD,
+            activebackground=PANEL,
+            activeforeground=FG,
+            highlightthickness=0,
+            font=self._font(10),
+        ).pack(side="left", padx=(16, 0))
+        tk.Checkbutton(
+            opts,
+            text="حفظ RSA الخام",
             variable=self.save_raw,
             bg=PANEL,
             fg=FG,
@@ -372,8 +387,8 @@ class DecryptApp(tk.Tk):
         if not self.files:
             messagebox.showwarning("لا يوجد ملف", "أضف ملفاً واحداً على الأقل.")
             return
-        if not self.save_raw.get() and not self.normalize.get():
-            messagebox.showwarning("خيارات", "فعّل حفظ RSA أو تطبيع LuaQ على الأقل.")
+        if not self.save_raw.get() and not self.normalize.get() and not self.decompile_src.get():
+            messagebox.showwarning("خيارات", "فعّل حفظ السورس أو البايت كود على الأقل.")
             return
         dest = self._output_dir()
         if dest is None:
@@ -408,30 +423,44 @@ class DecryptApp(tk.Tk):
     def _decrypt_one(self, path: Path, dest: Path) -> list[Path]:
         data = path.read_bytes()
         self.after(0, lambda: self._log(f"الحجم: {len(data)} بايت  |  أول بايت: 0x{data[0]:02X}", "muted"))
-        chunk, info = decrypt_mta_luac(data)
-        checksum = "OK" if info.get("checksum_ok") else "MISMATCH"
-        self.after(
-            0,
-            lambda: self._log(
-                f"RSA: {len(chunk)} بايت  |  checksum {checksum}  |  header {chunk[:4]!r}",
-                "ok",
-            ),
-        )
         written: list[Path] = []
-        if self.save_raw.get():
+        if data[:4] == b"\x1bLua":
+            chunk = data
+            normalized = data
+            stats = {}
+            self.after(0, lambda: self._log("الملف Lua 5.1 جاهز (مو مشفّر 0x1C) — ديكمبايل مباشرة.", "warn"))
+        else:
+            chunk, info = decrypt_mta_luac(data)
+            checksum = "OK" if info.get("checksum_ok") else "MISMATCH"
+            self.after(
+                0,
+                lambda: self._log(
+                    f"RSA: {len(chunk)} بايت  |  checksum {checksum}  |  header {chunk[:4]!r}",
+                    "ok",
+                ),
+            )
+            normalized, stats = normalize_luaq(chunk)
+            self.after(0, lambda s=stats: self._log(f"LuaQ {s}", "muted"))
+
+        if self.save_raw.get() and data[0] == 0x1C:
             raw_path = dest / f"{path.stem}.decrypted.luac"
             raw_path.write_bytes(chunk)
             written.append(raw_path)
             self.after(0, lambda p=raw_path: self._log(f"RSA → {p}", "muted"))
         if self.normalize.get():
-            normalized, stats = normalize_luaq(chunk)
             norm_path = dest / f"{path.stem}.normalized.luac"
             norm_path.write_bytes(normalized)
             written.append(norm_path)
+            self.after(0, lambda p=norm_path: self._log(f"bytecode → {p}", "muted"))
+        if self.decompile_src.get():
+            source = decompile_chunk(normalized)
+            lua_path = dest / f"{path.stem}.lua"
+            lua_path.write_text(source, encoding="utf-8")
+            written.append(lua_path)
             self.after(
                 0,
-                lambda s=stats, p=norm_path: self._log(
-                    f"LuaQ {s} → {p}",
+                lambda p=lua_path, n=len(source.splitlines()): self._log(
+                    f"سورس Lua ({n} سطر) → {p}",
                     "ok",
                 ),
             )
