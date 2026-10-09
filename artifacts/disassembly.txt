@@ -1,0 +1,1762 @@
+===== F0 params=0 vararg=2 ups=0 stack=27 lines=0-0 ncode=401 =====
+consts:
+  K0=1
+  K1="dxCreateShader"
+  K2=2
+  K3="dxCreateScreenSource"
+  K4=3
+  K5="dxCreateTexture"
+  K6=4
+  K7="dxSetShaderValue"
+  K8=5
+  K9="dxUpdateScreenSource"
+  K10=6
+  K11="dxDrawImage"
+  K12=7
+  K13="getTickCount"
+  K14=8
+  K15="getWeather"
+  K16=9
+  K17="getRainLevel"
+  K18=10
+  K19="guiGetScreenSize"
+  K20=11
+  K21="addEventHandler"
+  K22=12
+  K23="outputDebugString"
+  K24=13
+  K25="fileExists"
+  K26=14
+  K27="isElement"
+  K28=15
+  K29="destroyElement"
+  K30=16
+  K31="removeEventHandler"
+  K32=17
+  K33="tocolor"
+  K34=18
+  K35="math"
+  K36="min"
+  K37=19
+  K38="max"
+  K39=20
+  K40="string"
+  K41="format"
+  K42="csh"
+  K43="css"
+  K44="ctx"
+  K45="ssv"
+  K46="uss"
+  K47="dim"
+  K48="gtc"
+  K49="gw"
+  K50="grl"
+  K51="gss"
+  K52="aeh"
+  K53="ods"
+  K54="fe"
+  K55="ie"
+  K56="de"
+  K57="reh"
+  K58="tc"
+  K59="mmin"
+  K60="mmax"
+  K61="sfmt"
+  K62="evStart"
+  K63=111
+  K64=110
+  K65=67
+  K66=108
+  K67=105
+  K68=101
+  K69=116
+  K70=82
+  K71=115
+  K72=117
+  K73=114
+  K74=99
+  K75=83
+  K76=97
+  K77="evRender"
+  K78=100
+  K79="evStop"
+  K80=112
+  K81="pTex"
+  K82=103
+  K83=84
+  K84=120
+  K85="pSrc"
+  K86="pCrop"
+  K87=72
+  K88=104
+  K89="pInt"
+  K90=73
+  K91=121
+  K92="folder"
+  K93=102
+  K94=109
+  K95="fmtPath"
+  K96=37
+  K97=47
+  K98=49
+  K99=32
+  K100=40
+  K101=41
+  K102=46
+  K103="IDLE"
+  K104=0
+  K105="INIT"
+  K106="RUNNING"
+  K107="ERROR"
+  K108="CLEANUP"
+  K109="state"
+  K110="shader"
+  K111=False
+  K112="screen"
+  K113="textures"
+  K114="lIlIl"
+  K115="lIIll"
+  K116="lllIl"
+  K117="lIlII"
+  K118="lIIlI"
+  K119="lllII"
+  K120="lIIII"
+  K121="llIIl"
+  K122=None
+  K123="resourceRoot"
+code:
+   0 L1    CLOSURE    A=  0 B=   0 C=   0 Bx=     0 sBx=-131071 ; F1
+   1 L6    NEWTABLE   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   2 L7    NEWTABLE   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L8    NEWTABLE   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L14   NEWTABLE   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L16   GETGLOBAL  A=  5 B=   0 C=   1 Bx=     1 sBx=-131070 ; 'dxCreateShader'
+   6 L16   SETTABLE   A=  4 B= 256 C=   5 Bx=131077 sBx=      6 ; 1 R5
+   7 L17   GETGLOBAL  A=  5 B=   0 C=   3 Bx=     3 sBx=-131068 ; 'dxCreateScreenSource'
+   8 L17   SETTABLE   A=  4 B= 258 C=   5 Bx=132101 sBx=   1030 ; 2 R5
+   9 L18   GETGLOBAL  A=  5 B=   0 C=   5 Bx=     5 sBx=-131066 ; 'dxCreateTexture'
+  10 L18   SETTABLE   A=  4 B= 260 C=   5 Bx=133125 sBx=   2054 ; 3 R5
+  11 L19   GETGLOBAL  A=  5 B=   0 C=   7 Bx=     7 sBx=-131064 ; 'dxSetShaderValue'
+  12 L19   SETTABLE   A=  4 B= 262 C=   5 Bx=134149 sBx=   3078 ; 4 R5
+  13 L20   GETGLOBAL  A=  5 B=   0 C=   9 Bx=     9 sBx=-131062 ; 'dxUpdateScreenSource'
+  14 L20   SETTABLE   A=  4 B= 264 C=   5 Bx=135173 sBx=   4102 ; 5 R5
+  15 L21   GETGLOBAL  A=  5 B=   0 C=  11 Bx=    11 sBx=-131060 ; 'dxDrawImage'
+  16 L21   SETTABLE   A=  4 B= 266 C=   5 Bx=136197 sBx=   5126 ; 6 R5
+  17 L22   GETGLOBAL  A=  5 B=   0 C=  13 Bx=    13 sBx=-131058 ; 'getTickCount'
+  18 L22   SETTABLE   A=  4 B= 268 C=   5 Bx=137221 sBx=   6150 ; 7 R5
+  19 L23   GETGLOBAL  A=  5 B=   0 C=  15 Bx=    15 sBx=-131056 ; 'getWeather'
+  20 L23   SETTABLE   A=  4 B= 270 C=   5 Bx=138245 sBx=   7174 ; 8 R5
+  21 L24   GETGLOBAL  A=  5 B=   0 C=  17 Bx=    17 sBx=-131054 ; 'getRainLevel'
+  22 L24   SETTABLE   A=  4 B= 272 C=   5 Bx=139269 sBx=   8198 ; 9 R5
+  23 L25   GETGLOBAL  A=  5 B=   0 C=  19 Bx=    19 sBx=-131052 ; 'guiGetScreenSize'
+  24 L25   SETTABLE   A=  4 B= 274 C=   5 Bx=140293 sBx=   9222 ; 10 R5
+  25 L26   GETGLOBAL  A=  5 B=   0 C=  21 Bx=    21 sBx=-131050 ; 'addEventHandler'
+  26 L26   SETTABLE   A=  4 B= 276 C=   5 Bx=141317 sBx=  10246 ; 11 R5
+  27 L27   GETGLOBAL  A=  5 B=   0 C=  23 Bx=    23 sBx=-131048 ; 'outputDebugString'
+  28 L27   SETTABLE   A=  4 B= 278 C=   5 Bx=142341 sBx=  11270 ; 12 R5
+  29 L28   GETGLOBAL  A=  5 B=   0 C=  25 Bx=    25 sBx=-131046 ; 'fileExists'
+  30 L28   SETTABLE   A=  4 B= 280 C=   5 Bx=143365 sBx=  12294 ; 13 R5
+  31 L29   GETGLOBAL  A=  5 B=   0 C=  27 Bx=    27 sBx=-131044 ; 'isElement'
+  32 L29   SETTABLE   A=  4 B= 282 C=   5 Bx=144389 sBx=  13318 ; 14 R5
+  33 L30   GETGLOBAL  A=  5 B=   0 C=  29 Bx=    29 sBx=-131042 ; 'destroyElement'
+  34 L30   SETTABLE   A=  4 B= 284 C=   5 Bx=145413 sBx=  14342 ; 15 R5
+  35 L31   GETGLOBAL  A=  5 B=   0 C=  31 Bx=    31 sBx=-131040 ; 'removeEventHandler'
+  36 L31   SETTABLE   A=  4 B= 286 C=   5 Bx=146437 sBx=  15366 ; 16 R5
+  37 L32   GETGLOBAL  A=  5 B=   0 C=  33 Bx=    33 sBx=-131038 ; 'tocolor'
+  38 L32   SETTABLE   A=  4 B= 288 C=   5 Bx=147461 sBx=  16390 ; 17 R5
+  39 L33   GETGLOBAL  A=  5 B=   0 C=  35 Bx=    35 sBx=-131036 ; 'math'
+  40 L33   GETTABLE   A=  5 B=   5 C= 292 Bx=  2852 sBx=-128219 ; R5 "min"
+  41 L33   SETTABLE   A=  4 B= 290 C=   5 Bx=148485 sBx=  17414 ; 18 R5
+  42 L34   GETGLOBAL  A=  5 B=   0 C=  35 Bx=    35 sBx=-131036 ; 'math'
+  43 L34   GETTABLE   A=  5 B=   5 C= 294 Bx=  2854 sBx=-128217 ; R5 "max"
+  44 L34   SETTABLE   A=  4 B= 293 C=   5 Bx=150021 sBx=  18950 ; 19 R5
+  45 L35   GETGLOBAL  A=  5 B=   0 C=  40 Bx=    40 sBx=-131031 ; 'string'
+  46 L35   GETTABLE   A=  5 B=   5 C= 297 Bx=  2857 sBx=-128214 ; R5 "format"
+  47 L35   SETTABLE   A=  4 B= 295 C=   5 Bx=151045 sBx=  19974 ; 20 R5
+  48 L43   CLOSURE    A=  5 B=   0 C=   1 Bx=     1 sBx=-131070 ; F2
+  49 L43   MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+  50 L49   CLOSURE    A=  6 B=   0 C=   2 Bx=     2 sBx=-131069 ; F3
+  51 L49   MOVE       A=  0 B=   5 C=   0 Bx=  2560 sBx=-128511
+  52 L51   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  53 L51   LOADK      A=  8 B=   0 C=   0 Bx=     0 sBx=-131071 ; 1
+  54 L51   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  55 L51   SETTABLE   A=  1 B= 298 C=   7 Bx=152583 sBx=  21512 ; "csh" R7
+  56 L52   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  57 L52   LOADK      A=  8 B=   0 C=   2 Bx=     2 sBx=-131069 ; 2
+  58 L52   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  59 L52   SETTABLE   A=  1 B= 299 C=   7 Bx=153095 sBx=  22024 ; "css" R7
+  60 L53   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  61 L53   LOADK      A=  8 B=   0 C=   4 Bx=     4 sBx=-131067 ; 3
+  62 L53   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  63 L53   SETTABLE   A=  1 B= 300 C=   7 Bx=153607 sBx=  22536 ; "ctx" R7
+  64 L54   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  65 L54   LOADK      A=  8 B=   0 C=   6 Bx=     6 sBx=-131065 ; 4
+  66 L54   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  67 L54   SETTABLE   A=  1 B= 301 C=   7 Bx=154119 sBx=  23048 ; "ssv" R7
+  68 L55   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  69 L55   LOADK      A=  8 B=   0 C=   8 Bx=     8 sBx=-131063 ; 5
+  70 L55   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  71 L55   SETTABLE   A=  1 B= 302 C=   7 Bx=154631 sBx=  23560 ; "uss" R7
+  72 L56   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  73 L56   LOADK      A=  8 B=   0 C=  10 Bx=    10 sBx=-131061 ; 6
+  74 L56   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  75 L56   SETTABLE   A=  1 B= 303 C=   7 Bx=155143 sBx=  24072 ; "dim" R7
+  76 L57   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  77 L57   LOADK      A=  8 B=   0 C=  12 Bx=    12 sBx=-131059 ; 7
+  78 L57   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  79 L57   SETTABLE   A=  1 B= 304 C=   7 Bx=155655 sBx=  24584 ; "gtc" R7
+  80 L58   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  81 L58   LOADK      A=  8 B=   0 C=  14 Bx=    14 sBx=-131057 ; 8
+  82 L58   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  83 L58   SETTABLE   A=  1 B= 305 C=   7 Bx=156167 sBx=  25096 ; "gw" R7
+  84 L59   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  85 L59   LOADK      A=  8 B=   0 C=  16 Bx=    16 sBx=-131055 ; 9
+  86 L59   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  87 L59   SETTABLE   A=  1 B= 306 C=   7 Bx=156679 sBx=  25608 ; "grl" R7
+  88 L60   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  89 L60   LOADK      A=  8 B=   0 C=  18 Bx=    18 sBx=-131053 ; 10
+  90 L60   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  91 L60   SETTABLE   A=  1 B= 307 C=   7 Bx=157191 sBx=  26120 ; "gss" R7
+  92 L61   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  93 L61   LOADK      A=  8 B=   0 C=  20 Bx=    20 sBx=-131051 ; 11
+  94 L61   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  95 L61   SETTABLE   A=  1 B= 308 C=   7 Bx=157703 sBx=  26632 ; "aeh" R7
+  96 L62   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+  97 L62   LOADK      A=  8 B=   0 C=  22 Bx=    22 sBx=-131049 ; 12
+  98 L62   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  99 L62   SETTABLE   A=  1 B= 309 C=   7 Bx=158215 sBx=  27144 ; "ods" R7
+ 100 L63   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 101 L63   LOADK      A=  8 B=   0 C=  24 Bx=    24 sBx=-131047 ; 13
+ 102 L63   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 103 L63   SETTABLE   A=  1 B= 310 C=   7 Bx=158727 sBx=  27656 ; "fe" R7
+ 104 L64   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 105 L64   LOADK      A=  8 B=   0 C=  26 Bx=    26 sBx=-131045 ; 14
+ 106 L64   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 107 L64   SETTABLE   A=  1 B= 311 C=   7 Bx=159239 sBx=  28168 ; "ie" R7
+ 108 L65   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 109 L65   LOADK      A=  8 B=   0 C=  28 Bx=    28 sBx=-131043 ; 15
+ 110 L65   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 111 L65   SETTABLE   A=  1 B= 312 C=   7 Bx=159751 sBx=  28680 ; "de" R7
+ 112 L66   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 113 L66   LOADK      A=  8 B=   0 C=  30 Bx=    30 sBx=-131041 ; 16
+ 114 L66   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 115 L66   SETTABLE   A=  1 B= 313 C=   7 Bx=160263 sBx=  29192 ; "reh" R7
+ 116 L67   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 117 L67   LOADK      A=  8 B=   0 C=  32 Bx=    32 sBx=-131039 ; 17
+ 118 L67   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 119 L67   SETTABLE   A=  1 B= 314 C=   7 Bx=160775 sBx=  29704 ; "tc" R7
+ 120 L68   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 121 L68   LOADK      A=  8 B=   0 C=  34 Bx=    34 sBx=-131037 ; 18
+ 122 L68   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 123 L68   SETTABLE   A=  1 B= 315 C=   7 Bx=161287 sBx=  30216 ; "mmin" R7
+ 124 L69   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 125 L69   LOADK      A=  8 B=   0 C=  37 Bx=    37 sBx=-131034 ; 19
+ 126 L69   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 127 L69   SETTABLE   A=  1 B= 316 C=   7 Bx=161799 sBx=  30728 ; "mmax" R7
+ 128 L70   MOVE       A=  7 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 129 L70   LOADK      A=  8 B=   0 C=  39 Bx=    39 sBx=-131032 ; 20
+ 130 L70   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+ 131 L70   SETTABLE   A=  1 B= 317 C=   7 Bx=162311 sBx=  31240 ; "sfmt" R7
+ 132 L70   CLOSE      A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 133 L84   CLOSURE    A=  4 B=   0 C=   3 Bx=     3 sBx=-131068 ; F5
+ 134 L86   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 135 L86   LOADK      A=  6 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 136 L86   LOADK      A=  7 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 137 L86   LOADK      A=  8 B=   0 C=  65 Bx=    65 sBx=-131006 ; 67
+ 138 L86   LOADK      A=  9 B=   0 C=  66 Bx=    66 sBx=-131005 ; 108
+ 139 L86   LOADK      A= 10 B=   0 C=  67 Bx=    67 sBx=-131004 ; 105
+ 140 L86   LOADK      A= 11 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 141 L86   LOADK      A= 12 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 142 L86   LOADK      A= 13 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 143 L86   LOADK      A= 14 B=   0 C=  70 Bx=    70 sBx=-131001 ; 82
+ 144 L86   LOADK      A= 15 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 145 L86   LOADK      A= 16 B=   0 C=  71 Bx=    71 sBx=-131000 ; 115
+ 146 L86   LOADK      A= 17 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 147 L86   LOADK      A= 18 B=   0 C=  72 Bx=    72 sBx=-130999 ; 117
+ 148 L86   LOADK      A= 19 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 149 L86   LOADK      A= 20 B=   0 C=  74 Bx=    74 sBx=-130997 ; 99
+ 150 L86   LOADK      A= 21 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 151 L86   LOADK      A= 22 B=   0 C=  75 Bx=    75 sBx=-130996 ; 83
+ 152 L86   LOADK      A= 23 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 153 L86   LOADK      A= 24 B=   0 C=  76 Bx=    76 sBx=-130995 ; 97
+ 154 L86   LOADK      A= 25 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 155 L86   LOADK      A= 26 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 156 L86   CALL       A=  5 B=  22 C=   2 Bx= 11266 sBx=-119805 ; nargs=21 nret=1
+ 157 L86   SETTABLE   A=  3 B= 318 C=   5 Bx=162821 sBx=  31750 ; "evStart" R5
+ 158 L87   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 159 L87   LOADK      A=  6 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 160 L87   LOADK      A=  7 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 161 L87   LOADK      A=  8 B=   0 C=  65 Bx=    65 sBx=-131006 ; 67
+ 162 L87   LOADK      A=  9 B=   0 C=  66 Bx=    66 sBx=-131005 ; 108
+ 163 L87   LOADK      A= 10 B=   0 C=  67 Bx=    67 sBx=-131004 ; 105
+ 164 L87   LOADK      A= 11 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 165 L87   LOADK      A= 12 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 166 L87   LOADK      A= 13 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 167 L87   LOADK      A= 14 B=   0 C=  70 Bx=    70 sBx=-131001 ; 82
+ 168 L87   LOADK      A= 15 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 169 L87   LOADK      A= 16 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 170 L87   LOADK      A= 17 B=   0 C=  78 Bx=    78 sBx=-130993 ; 100
+ 171 L87   LOADK      A= 18 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 172 L87   LOADK      A= 19 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 173 L87   CALL       A=  5 B=  15 C=   2 Bx=  7682 sBx=-123389 ; nargs=14 nret=1
+ 174 L87   SETTABLE   A=  3 B= 333 C=   5 Bx=170501 sBx=  39430 ; "evRender" R5
+ 175 L88   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 176 L88   LOADK      A=  6 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 177 L88   LOADK      A=  7 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 178 L88   LOADK      A=  8 B=   0 C=  65 Bx=    65 sBx=-131006 ; 67
+ 179 L88   LOADK      A=  9 B=   0 C=  66 Bx=    66 sBx=-131005 ; 108
+ 180 L88   LOADK      A= 10 B=   0 C=  67 Bx=    67 sBx=-131004 ; 105
+ 181 L88   LOADK      A= 11 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 182 L88   LOADK      A= 12 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 183 L88   LOADK      A= 13 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 184 L88   LOADK      A= 14 B=   0 C=  70 Bx=    70 sBx=-131001 ; 82
+ 185 L88   LOADK      A= 15 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 186 L88   LOADK      A= 16 B=   0 C=  71 Bx=    71 sBx=-131000 ; 115
+ 187 L88   LOADK      A= 17 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 188 L88   LOADK      A= 18 B=   0 C=  72 Bx=    72 sBx=-130999 ; 117
+ 189 L88   LOADK      A= 19 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 190 L88   LOADK      A= 20 B=   0 C=  74 Bx=    74 sBx=-130997 ; 99
+ 191 L88   LOADK      A= 21 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 192 L88   LOADK      A= 22 B=   0 C=  75 Bx=    75 sBx=-130996 ; 83
+ 193 L88   LOADK      A= 23 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 194 L88   LOADK      A= 24 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 195 L88   LOADK      A= 25 B=   0 C=  80 Bx=    80 sBx=-130991 ; 112
+ 196 L88   CALL       A=  5 B=  21 C=   2 Bx= 10754 sBx=-120317 ; nargs=20 nret=1
+ 197 L88   SETTABLE   A=  3 B= 335 C=   5 Bx=171525 sBx=  40454 ; "evStop" R5
+ 198 L90   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 199 L90   LOADK      A=  6 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 200 L90   LOADK      A=  7 B=   0 C=  83 Bx=    83 sBx=-130988 ; 84
+ 201 L90   LOADK      A=  8 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 202 L90   LOADK      A=  9 B=   0 C=  84 Bx=    84 sBx=-130987 ; 120
+ 203 L90   LOADK      A= 10 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 204 L90   LOADK      A= 11 B=   0 C=  72 Bx=    72 sBx=-130999 ; 117
+ 205 L90   LOADK      A= 12 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 206 L90   LOADK      A= 13 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 207 L90   CALL       A=  5 B=   9 C=   2 Bx=  4610 sBx=-126461 ; nargs=8 nret=1
+ 208 L90   SETTABLE   A=  3 B= 337 C=   5 Bx=172549 sBx=  41478 ; "pTex" R5
+ 209 L91   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 210 L91   LOADK      A=  6 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 211 L91   LOADK      A=  7 B=   0 C=  75 Bx=    75 sBx=-130996 ; 83
+ 212 L91   LOADK      A=  8 B=   0 C=  74 Bx=    74 sBx=-130997 ; 99
+ 213 L91   LOADK      A=  9 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 214 L91   LOADK      A= 10 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 215 L91   LOADK      A= 11 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 216 L91   LOADK      A= 12 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 217 L91   LOADK      A= 13 B=   0 C=  75 Bx=    75 sBx=-130996 ; 83
+ 218 L91   LOADK      A= 14 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 219 L91   LOADK      A= 15 B=   0 C=  72 Bx=    72 sBx=-130999 ; 117
+ 220 L91   LOADK      A= 16 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 221 L91   LOADK      A= 17 B=   0 C=  74 Bx=    74 sBx=-130997 ; 99
+ 222 L91   LOADK      A= 18 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 223 L91   CALL       A=  5 B=  14 C=   2 Bx=  7170 sBx=-123901 ; nargs=13 nret=1
+ 224 L91   SETTABLE   A=  3 B= 341 C=   5 Bx=174597 sBx=  43526 ; "pSrc" R5
+ 225 L92   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 226 L92   LOADK      A=  6 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 227 L92   LOADK      A=  7 B=   0 C=  65 Bx=    65 sBx=-131006 ; 67
+ 228 L92   LOADK      A=  8 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 229 L92   LOADK      A=  9 B=   0 C=  63 Bx=    63 sBx=-131008 ; 111
+ 230 L92   LOADK      A= 10 B=   0 C=  80 Bx=    80 sBx=-130991 ; 112
+ 231 L92   LOADK      A= 11 B=   0 C=  87 Bx=    87 sBx=-130984 ; 72
+ 232 L92   LOADK      A= 12 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 233 L92   LOADK      A= 13 B=   0 C=  67 Bx=    67 sBx=-131004 ; 105
+ 234 L92   LOADK      A= 14 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 235 L92   LOADK      A= 15 B=   0 C=  88 Bx=    88 sBx=-130983 ; 104
+ 236 L92   LOADK      A= 16 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 237 L92   CALL       A=  5 B=  12 C=   2 Bx=  6146 sBx=-124925 ; nargs=11 nret=1
+ 238 L92   SETTABLE   A=  3 B= 342 C=   5 Bx=175109 sBx=  44038 ; "pCrop" R5
+ 239 L93   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 240 L93   LOADK      A=  6 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 241 L93   LOADK      A=  7 B=   0 C=  90 Bx=    90 sBx=-130981 ; 73
+ 242 L93   LOADK      A=  8 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 243 L93   LOADK      A=  9 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 244 L93   LOADK      A= 10 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 245 L93   LOADK      A= 11 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 246 L93   LOADK      A= 12 B=   0 C=  71 Bx=    71 sBx=-131000 ; 115
+ 247 L93   LOADK      A= 13 B=   0 C=  67 Bx=    67 sBx=-131004 ; 105
+ 248 L93   LOADK      A= 14 B=   0 C=  69 Bx=    69 sBx=-131002 ; 116
+ 249 L93   LOADK      A= 15 B=   0 C=  91 Bx=    91 sBx=-130980 ; 121
+ 250 L93   CALL       A=  5 B=  11 C=   2 Bx=  5634 sBx=-125437 ; nargs=10 nret=1
+ 251 L93   SETTABLE   A=  3 B= 345 C=   5 Bx=176645 sBx=  45574 ; "pInt" R5
+ 252 L95   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 253 L95   LOADK      A=  6 B=   0 C=  93 Bx=    93 sBx=-130978 ; 102
+ 254 L95   LOADK      A=  7 B=   0 C=  73 Bx=    73 sBx=-130998 ; 114
+ 255 L95   LOADK      A=  8 B=   0 C=  76 Bx=    76 sBx=-130995 ; 97
+ 256 L95   LOADK      A=  9 B=   0 C=  94 Bx=    94 sBx=-130977 ; 109
+ 257 L95   LOADK      A= 10 B=   0 C=  68 Bx=    68 sBx=-131003 ; 101
+ 258 L95   LOADK      A= 11 B=   0 C=  71 Bx=    71 sBx=-131000 ; 115
+ 259 L95   CALL       A=  5 B=   7 C=   2 Bx=  3586 sBx=-127485 ; nargs=6 nret=1
+ 260 L95   SETTABLE   A=  3 B= 348 C=   5 Bx=178181 sBx=  47110 ; "folder" R5
+ 261 L96   MOVE       A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 262 L96   LOADK      A=  6 B=   0 C=  96 Bx=    96 sBx=-130975 ; 37
+ 263 L96   LOADK      A=  7 B=   0 C=  71 Bx=    71 sBx=-131000 ; 115
+ 264 L96   LOADK      A=  8 B=   0 C=  97 Bx=    97 sBx=-130974 ; 47
+ 265 L96   LOADK      A=  9 B=   0 C=  98 Bx=    98 sBx=-130973 ; 49
+ 266 L96   LOADK      A= 10 B=   0 C=  99 Bx=    99 sBx=-130972 ; 32
+ 267 L96   LOADK      A= 11 B=   0 C= 100 Bx=   100 sBx=-130971 ; 40
+ 268 L96   LOADK      A= 12 B=   0 C=  96 Bx=    96 sBx=-130975 ; 37
+ 269 L96   LOADK      A= 13 B=   0 C=  78 Bx=    78 sBx=-130993 ; 100
+ 270 L96   LOADK      A= 14 B=   0 C= 101 Bx=   101 sBx=-130970 ; 41
+ 271 L96   LOADK      A= 15 B=   0 C= 102 Bx=   102 sBx=-130969 ; 46
+ 272 L96   LOADK      A= 16 B=   0 C=  80 Bx=    80 sBx=-130991 ; 112
+ 273 L96   LOADK      A= 17 B=   0 C=  64 Bx=    64 sBx=-131007 ; 110
+ 274 L96   LOADK      A= 18 B=   0 C=  82 Bx=    82 sBx=-130989 ; 103
+ 275 L96   CALL       A=  5 B=  14 C=   2 Bx=  7170 sBx=-123901 ; nargs=13 nret=1
+ 276 L96   SETTABLE   A=  3 B= 351 C=   5 Bx=179717 sBx=  48646 ; "fmtPath" R5
+ 277 L128  CLOSURE    A=  4 B=   0 C=   4 Bx=     4 sBx=-131067 ; F6
+ 278 L128  CALL       A=  4 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 279 L138  CLOSURE    A=  5 B=   0 C=   5 Bx=     5 sBx=-131066 ; F18
+ 280 L138  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 281 L183  CLOSURE    A=  6 B=   0 C=   6 Bx=     6 sBx=-131065 ; F19
+ 282 L183  CALL       A=  6 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 283 L189  NEWTABLE   A=  7 B=   0 C=   5 Bx=     5 sBx=-131066
+ 284 L190  SETTABLE   A=  7 B= 359 C= 360 Bx=184168 sBx=  53097 ; "IDLE" 0
+ 285 L191  SETTABLE   A=  7 B= 361 C= 256 Bx=185088 sBx=  54017 ; "INIT" 1
+ 286 L192  SETTABLE   A=  7 B= 362 C= 258 Bx=185602 sBx=  54531 ; "RUNNING" 2
+ 287 L193  SETTABLE   A=  7 B= 363 C= 260 Bx=186116 sBx=  55045 ; "ERROR" 3
+ 288 L194  SETTABLE   A=  7 B= 364 C= 262 Bx=186630 sBx=  55559 ; "CLEANUP" 4
+ 289 L197  NEWTABLE   A=  8 B=   0 C=  12 Bx=    12 sBx=-131059
+ 290 L198  GETTABLE   A=  9 B=   7 C= 359 Bx=  3943 sBx=-127128 ; R7 "IDLE"
+ 291 L198  SETTABLE   A=  8 B= 365 C=   9 Bx=186889 sBx=  55818 ; "state" R9
+ 292 L199  SETTABLE   A=  8 B= 366 C= 367 Bx=187759 sBx=  56688 ; "shader" False
+ 293 L200  SETTABLE   A=  8 B= 368 C= 367 Bx=188783 sBx=  57712 ; "screen" False
+ 294 L201  NEWTABLE   A=  9 B=   0 C=   0 Bx=     0 sBx=-131071
+ 295 L201  SETTABLE   A=  8 B= 369 C=   9 Bx=188937 sBx=  57866 ; "textures" R9
+ 296 L202  SETTABLE   A=  8 B= 370 C= 256 Bx=189696 sBx=  58625 ; "lIlIl" 1
+ 297 L203  SETTABLE   A=  8 B= 371 C= 360 Bx=190312 sBx=  59241 ; "lIIll" 0
+ 298 L204  SETTABLE   A=  8 B= 372 C= 360 Bx=190824 sBx=  59753 ; "lllIl" 0
+ 299 L205  SETTABLE   A=  8 B= 373 C= 360 Bx=191336 sBx=  60265 ; "lIlII" 0
+ 300 L206  SETTABLE   A=  8 B= 374 C= 360 Bx=191848 sBx=  60777 ; "lIIlI" 0
+ 301 L207  SETTABLE   A=  8 B= 375 C= 360 Bx=192360 sBx=  61289 ; "lllII" 0
+ 302 L208  SETTABLE   A=  8 B= 376 C= 360 Bx=192872 sBx=  61801 ; "lIIII" 0
+ 303 L209  SETTABLE   A=  8 B= 377 C= 378 Bx=193402 sBx=  62331 ; "llIIl" None
+ 304 L218  CLOSURE    A=  9 B=   0 C=   7 Bx=     7 sBx=-131064 ; F20
+ 305 L225  CLOSURE    A= 10 B=   0 C=   8 Bx=     8 sBx=-131063 ; F21
+ 306 L230  CLOSURE    A= 11 B=   0 C=   9 Bx=     9 sBx=-131062 ; F22
+ 307 L230  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 308 L235  CLOSURE    A= 12 B=   0 C=  10 Bx=    10 sBx=-131061 ; F23
+ 309 L235  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 310 L244  CLOSURE    A= 13 B=   0 C=  11 Bx=    11 sBx=-131060 ; F24
+ 311 L244  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 312 L244  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 313 L244  CALL       A= 13 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 314 L269  CLOSURE    A= 14 B=   0 C=  12 Bx=    12 sBx=-131059 ; F26
+ 315 L269  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 316 L269  MOVE       A=  0 B=   7 C=   0 Bx=  3584 sBx=-127487
+ 317 L269  MOVE       A=  0 B=  11 C=   0 Bx=  5632 sBx=-125439
+ 318 L269  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 319 L295  CLOSURE    A= 15 B=   0 C=  13 Bx=    13 sBx=-131058 ; F27
+ 320 L295  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 321 L295  MOVE       A=  0 B=  10 C=   0 Bx=  5120 sBx=-125951
+ 322 L295  MOVE       A=  0 B=  13 C=   0 Bx=  6656 sBx=-124415
+ 323 L295  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 324 L295  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 325 L295  MOVE       A=  0 B=  12 C=   0 Bx=  6144 sBx=-124927
+ 326 L355  CLOSURE    A= 16 B=   0 C=  14 Bx=    14 sBx=-131057 ; F28
+ 327 L355  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 328 L355  MOVE       A=  0 B=   7 C=   0 Bx=  3584 sBx=-127487
+ 329 L355  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 330 L355  MOVE       A=  0 B=  12 C=   0 Bx=  6144 sBx=-124927
+ 331 L355  MOVE       A=  0 B=   9 C=   0 Bx=  4608 sBx=-126463
+ 332 L355  MOVE       A=  0 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 333 L355  MOVE       A=  0 B=  14 C=   0 Bx=  7168 sBx=-123903
+ 334 L355  MOVE       A=  0 B=  15 C=   0 Bx=  7680 sBx=-123391
+ 335 L355  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 336 L355  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 337 L373  CLOSURE    A= 17 B=   0 C=  15 Bx=    15 sBx=-131056 ; F29
+ 338 L373  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 339 L373  MOVE       A=  0 B=   5 C=   0 Bx=  2560 sBx=-128511
+ 340 L373  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 341 L373  MOVE       A=  0 B=  10 C=   0 Bx=  5120 sBx=-125951
+ 342 L373  CALL       A= 17 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 343 L394  CLOSURE    A= 18 B=   0 C=  16 Bx=    16 sBx=-131055 ; F31
+ 344 L394  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 345 L394  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 346 L394  CALL       A= 18 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 347 L397  NEWTABLE   A= 19 B=   0 C=   0 Bx=     0 sBx=-131071
+ 348 L405  CLOSURE    A= 20 B=   0 C=  17 Bx=    17 sBx=-131054 ; F33
+ 349 L405  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 350 L405  MOVE       A=  0 B=   7 C=   0 Bx=  3584 sBx=-127487
+ 351 L405  MOVE       A=  0 B=  11 C=   0 Bx=  5632 sBx=-125439
+ 352 L405  SETTABLE   A= 19 B= 256 C=  20 Bx=131092 sBx=     21 ; 1 R20
+ 353 L417  CLOSURE    A= 20 B=   0 C=  18 Bx=    18 sBx=-131053 ; F34
+ 354 L417  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 355 L417  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 356 L417  MOVE       A=  0 B=  17 C=   0 Bx=  8704 sBx=-122367
+ 357 L417  MOVE       A=  0 B=  18 C=   0 Bx=  9216 sBx=-121855
+ 358 L417  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 359 L417  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 360 L417  SETTABLE   A= 19 B= 258 C=  20 Bx=132116 sBx=   1045 ; 2 R20
+ 361 L432  CLOSURE    A= 20 B=   0 C=  19 Bx=    19 sBx=-131052 ; F35
+ 362 L432  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 363 L432  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 364 L432  MOVE       A=  0 B=  11 C=   0 Bx=  5632 sBx=-125439
+ 365 L432  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 366 L432  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 367 L432  SETTABLE   A= 19 B= 260 C=  20 Bx=133140 sBx=   2069 ; 3 R20
+ 368 L446  CLOSURE    A= 20 B=   0 C=  20 Bx=    20 sBx=-131051 ; F36
+ 369 L446  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 370 L446  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+ 371 L446  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 372 L446  SETTABLE   A= 19 B= 262 C=  20 Bx=134164 sBx=   3093 ; 4 R20
+ 373 L457  CLOSURE    A= 20 B=   0 C=  21 Bx=    21 sBx=-131050 ; F37
+ 374 L457  MOVE       A=  0 B=  19 C=   0 Bx=  9728 sBx=-121343
+ 375 L457  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 376 L474  CLOSURE    A= 21 B=   0 C=  22 Bx=    22 sBx=-131049 ; F38
+ 377 L474  MOVE       A=  0 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 378 L474  MOVE       A=  0 B=   7 C=   0 Bx=  3584 sBx=-127487
+ 379 L474  MOVE       A=  0 B=  16 C=   0 Bx=  8192 sBx=-122879
+ 380 L474  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 381 L474  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 382 L474  MOVE       A=  0 B=  20 C=   0 Bx= 10240 sBx=-120831
+ 383 L481  CLOSURE    A= 22 B=   0 C=  23 Bx=    23 sBx=-131048 ; F39
+ 384 L481  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+ 385 L481  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 386 L481  MOVE       A=  0 B=  20 C=   0 Bx= 10240 sBx=-120831
+ 387 L481  MOVE       A=  0 B=  14 C=   0 Bx=  7168 sBx=-123903
+ 388 L481  MOVE       A=  0 B=  12 C=   0 Bx=  6144 sBx=-124927
+ 389 L483  GETTABLE   A= 23 B=   1 C= 308 Bx=   820 sBx=-130251 ; R1 "aeh"
+ 390 L483  GETTABLE   A= 24 B=   3 C= 318 Bx=  1854 sBx=-129217 ; R3 "evStart"
+ 391 L483  GETGLOBAL  A= 25 B=   0 C= 123 Bx=   123 sBx=-130948 ; 'resourceRoot'
+ 392 L483  MOVE       A= 26 B=  21 C=   0 Bx= 10752 sBx=-120319
+ 393 L483  CALL       A= 23 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+ 394 L484  GETTABLE   A= 23 B=   1 C= 308 Bx=   820 sBx=-130251 ; R1 "aeh"
+ 395 L484  GETTABLE   A= 24 B=   3 C= 335 Bx=  1871 sBx=-129200 ; R3 "evStop"
+ 396 L484  GETGLOBAL  A= 25 B=   0 C= 123 Bx=   123 sBx=-130948 ; 'resourceRoot'
+ 397 L484  MOVE       A= 26 B=  22 C=   0 Bx= 11264 sBx=-119807
+ 398 L484  CALL       A= 23 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+ 399 L484  CLOSE      A=  7 B=   0 C=   0 Bx=     0 sBx=-131071
+ 400 L485  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F1 params=2 vararg=0 ups=0 stack=2 lines=1-1 ncode=71 =====
+consts:
+  K0=2
+code:
+   0 L1    EQ         A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 2
+   1 L1    JMP        A=  0 B= 256 C=  66 Bx=131138 sBx=     67 ; -> 69
+   2 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   3 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   4 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   5 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   6 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   7 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   8 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   9 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  10 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  11 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  12 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  13 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  14 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  15 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  16 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  17 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  18 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  19 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  20 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  21 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  22 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  23 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  24 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  25 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  26 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  27 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  28 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  29 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  30 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  31 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  32 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  33 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  34 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  35 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  36 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  37 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  38 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  39 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  40 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  41 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  42 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  43 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  44 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  45 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  46 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  47 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  48 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  49 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  50 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  51 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  52 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  53 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  54 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  55 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  56 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  57 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  58 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  59 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  60 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  61 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  62 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  63 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  64 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  65 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  66 L1    DIV        A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  67 L1    ADD        A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  68 L1    JMP        A=  0 B= 255 C= 442 Bx=131002 sBx=    -69 ; -> 0
+  69 L1    RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  70 L1    RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F2 params=1 vararg=3 ups=1 stack=5 lines=37-43 ncode=14 =====
+consts:
+  K0="type"
+  K1="function"
+code:
+   0 L38   GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L38   GETTABLE   A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047 ; R2 R0
+   2 L39   GETGLOBAL  A=  3 B=   0 C=   0 Bx=     0 sBx=-131071 ; 'type'
+   3 L39   MOVE       A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+   4 L39   CALL       A=  3 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+   5 L39   EQ         A=  0 B=   3 C= 257 Bx=  1793 sBx=-129278 ; R3 "function"
+   6 L39   JMP        A=  0 B= 256 C=   3 Bx=131075 sBx=      4 ; -> 11
+   7 L40   MOVE       A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+   8 L40   VARARG     A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+   9 L40   TAILCALL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  10 L40   RETURN     A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  11 L42   LOADNIL    A=  3 B=   3 C=   0 Bx=  1536 sBx=-129535
+  12 L42   RETURN     A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  13 L43   RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F3 params=1 vararg=0 ups=1 stack=2 lines=45-49 ncode=5 =====
+consts:
+code:
+   0 L48   CLOSURE    A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; F4
+   1 L48   GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   2 L48   MOVE       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L48   RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+   4 L49   RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F4 params=0 vararg=3 ups=2 stack=4 lines=46-48 ncode=6 =====
+consts:
+code:
+   0 L47   GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L47   GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+   2 L47   VARARG     A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L47   TAILCALL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L47   RETURN     A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L48   RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F5 params=0 vararg=3 ups=0 stack=9 lines=77-84 ncode=20 =====
+consts:
+  K0=1
+  K1="string"
+  K2="char"
+  K3="table"
+  K4="concat"
+code:
+   0 L78   NEWTABLE   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L79   NEWTABLE   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   2 L79   VARARG     A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L79   SETLIST    A=  2 B=   0 C=   1 Bx=     1 sBx=-131070
+   4 L80   LOADK      A=  3 B=   0 C=   0 Bx=     0 sBx=-131071 ; 1
+   5 L80   LEN        A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+   6 L80   LOADK      A=  5 B=   0 C=   0 Bx=     0 sBx=-131071 ; 1
+   7 L80   FORPREP    A=  3 B= 256 C=   4 Bx=131076 sBx=      5 ; -> 13
+   8 L81   GETGLOBAL  A=  7 B=   0 C=   1 Bx=     1 sBx=-131070 ; 'string'
+   9 L81   GETTABLE   A=  7 B=   7 C= 258 Bx=  3842 sBx=-127229 ; R7 "char"
+  10 L81   GETTABLE   A=  8 B=   2 C=   6 Bx=  1030 sBx=-130041 ; R2 R6
+  11 L81   CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  12 L81   SETTABLE   A=  1 B=   6 C=   7 Bx=  3079 sBx=-127992 ; R6 R7
+  13 L80   FORLOOP    A=  3 B= 255 C= 505 Bx=131065 sBx=     -6 ; -> 8
+  14 L83   GETGLOBAL  A=  3 B=   0 C=   3 Bx=     3 sBx=-131068 ; 'table'
+  15 L83   GETTABLE   A=  3 B=   3 C= 260 Bx=  1796 sBx=-129275 ; R3 "concat"
+  16 L83   MOVE       A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+  17 L83   TAILCALL   A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  18 L83   RETURN     A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  19 L84   RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F6 params=0 vararg=0 ups=0 stack=4 lines=102-128 ncode=46 =====
+consts:
+  K0=161
+  K1=317
+  K2=162
+  K3=30
+  K4=163
+  K5=0.5
+  K6=164
+  K7=0.45
+  K8=165
+  K9=1000
+  K10=166
+  K11=0.001
+  K12=167
+  K13=0.02
+  K14=168
+  K15=169
+  K16=1
+  K17=170
+  K18=0
+  K19="maxTex"
+  K20="fps"
+  K21="crop"
+  K22="fade"
+  K23="msec"
+  K24="eps"
+  K25="rainThres"
+  K26="drawEps"
+  K27="one"
+  K28="zero"
+code:
+   0 L103  NEWTABLE   A=  0 B=   0 C=  10 Bx=    10 sBx=-131061
+   1 L104  SETTABLE   A=  0 B= 256 C= 257 Bx=131329 sBx=    258 ; 161 317
+   2 L105  SETTABLE   A=  0 B= 258 C= 259 Bx=132355 sBx=   1284 ; 162 30
+   3 L106  SETTABLE   A=  0 B= 260 C= 261 Bx=133381 sBx=   2310 ; 163 0.5
+   4 L107  SETTABLE   A=  0 B= 262 C= 263 Bx=134407 sBx=   3336 ; 164 0.45
+   5 L108  SETTABLE   A=  0 B= 264 C= 265 Bx=135433 sBx=   4362 ; 165 1000
+   6 L109  SETTABLE   A=  0 B= 266 C= 267 Bx=136459 sBx=   5388 ; 166 0.001
+   7 L110  SETTABLE   A=  0 B= 268 C= 269 Bx=137485 sBx=   6414 ; 167 0.02
+   8 L111  SETTABLE   A=  0 B= 270 C= 267 Bx=138507 sBx=   7436 ; 168 0.001
+   9 L112  SETTABLE   A=  0 B= 271 C= 272 Bx=139024 sBx=   7953 ; 169 1
+  10 L113  SETTABLE   A=  0 B= 273 C= 274 Bx=140050 sBx=   8979 ; 170 0
+  11 L115  CLOSURE    A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; F7
+  12 L115  MOVE       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+  13 L116  NEWTABLE   A=  2 B=   0 C=  10 Bx=    10 sBx=-131061
+  14 L117  CLOSURE    A=  3 B=   0 C=   1 Bx=     1 sBx=-131070 ; F8
+  15 L117  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  16 L117  SETTABLE   A=  2 B= 275 C=   3 Bx=140803 sBx=   9732 ; "maxTex" R3
+  17 L118  CLOSURE    A=  3 B=   0 C=   2 Bx=     2 sBx=-131069 ; F9
+  18 L118  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  19 L118  SETTABLE   A=  2 B= 276 C=   3 Bx=141315 sBx=  10244 ; "fps" R3
+  20 L119  CLOSURE    A=  3 B=   0 C=   3 Bx=     3 sBx=-131068 ; F10
+  21 L119  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  22 L119  SETTABLE   A=  2 B= 277 C=   3 Bx=141827 sBx=  10756 ; "crop" R3
+  23 L120  CLOSURE    A=  3 B=   0 C=   4 Bx=     4 sBx=-131067 ; F11
+  24 L120  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  25 L120  SETTABLE   A=  2 B= 278 C=   3 Bx=142339 sBx=  11268 ; "fade" R3
+  26 L121  CLOSURE    A=  3 B=   0 C=   5 Bx=     5 sBx=-131066 ; F12
+  27 L121  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  28 L121  SETTABLE   A=  2 B= 279 C=   3 Bx=142851 sBx=  11780 ; "msec" R3
+  29 L122  CLOSURE    A=  3 B=   0 C=   6 Bx=     6 sBx=-131065 ; F13
+  30 L122  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  31 L122  SETTABLE   A=  2 B= 280 C=   3 Bx=143363 sBx=  12292 ; "eps" R3
+  32 L123  CLOSURE    A=  3 B=   0 C=   7 Bx=     7 sBx=-131064 ; F14
+  33 L123  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  34 L123  SETTABLE   A=  2 B= 281 C=   3 Bx=143875 sBx=  12804 ; "rainThres" R3
+  35 L124  CLOSURE    A=  3 B=   0 C=   8 Bx=     8 sBx=-131063 ; F15
+  36 L124  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  37 L124  SETTABLE   A=  2 B= 282 C=   3 Bx=144387 sBx=  13316 ; "drawEps" R3
+  38 L125  CLOSURE    A=  3 B=   0 C=   9 Bx=     9 sBx=-131062 ; F16
+  39 L125  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  40 L125  SETTABLE   A=  2 B= 283 C=   3 Bx=144899 sBx=  13828 ; "one" R3
+  41 L126  CLOSURE    A=  3 B=   0 C=  10 Bx=    10 sBx=-131061 ; F17
+  42 L126  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  43 L126  SETTABLE   A=  2 B= 284 C=   3 Bx=145411 sBx=  14340 ; "zero" R3
+  44 L127  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  45 L128  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F7 params=1 vararg=0 ups=1 stack=2 lines=115-115 ncode=4 =====
+consts:
+code:
+   0 L115  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L115  GETTABLE   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+   2 L115  RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L115  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F8 params=0 vararg=0 ups=1 stack=2 lines=117-117 ncode=5 =====
+consts:
+  K0=161
+code:
+   0 L117  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L117  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 161
+   2 L117  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L117  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L117  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F9 params=0 vararg=0 ups=1 stack=2 lines=118-118 ncode=5 =====
+consts:
+  K0=162
+code:
+   0 L118  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L118  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 162
+   2 L118  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L118  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L118  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F10 params=0 vararg=0 ups=1 stack=2 lines=119-119 ncode=5 =====
+consts:
+  K0=163
+code:
+   0 L119  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L119  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 163
+   2 L119  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L119  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L119  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F11 params=0 vararg=0 ups=1 stack=2 lines=120-120 ncode=5 =====
+consts:
+  K0=164
+code:
+   0 L120  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L120  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 164
+   2 L120  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L120  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L120  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F12 params=0 vararg=0 ups=1 stack=2 lines=121-121 ncode=5 =====
+consts:
+  K0=165
+code:
+   0 L121  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L121  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 165
+   2 L121  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L121  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L121  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F13 params=0 vararg=0 ups=1 stack=2 lines=122-122 ncode=5 =====
+consts:
+  K0=166
+code:
+   0 L122  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L122  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 166
+   2 L122  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L122  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L122  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F14 params=0 vararg=0 ups=1 stack=2 lines=123-123 ncode=5 =====
+consts:
+  K0=167
+code:
+   0 L123  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L123  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 167
+   2 L123  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L123  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L123  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F15 params=0 vararg=0 ups=1 stack=2 lines=124-124 ncode=5 =====
+consts:
+  K0=168
+code:
+   0 L124  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L124  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 168
+   2 L124  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L124  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L124  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F16 params=0 vararg=0 ups=1 stack=2 lines=125-125 ncode=5 =====
+consts:
+  K0=169
+code:
+   0 L125  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L125  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 169
+   2 L125  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L125  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L125  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F17 params=0 vararg=0 ups=1 stack=2 lines=126-126 ncode=5 =====
+consts:
+  K0=170
+code:
+   0 L126  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L126  LOADK      A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; 170
+   2 L126  TAILCALL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   3 L126  RETURN     A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L126  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F18 params=0 vararg=0 ups=0 stack=7 lines=133-138 ncode=14 =====
+consts:
+  K0=8
+  K1=16
+  K2=1
+  K3=True
+code:
+   0 L134  NEWTABLE   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L135  NEWTABLE   A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+   2 L135  LOADK      A=  2 B=   0 C=   0 Bx=     0 sBx=-131071 ; 8
+   3 L135  LOADK      A=  3 B=   0 C=   1 Bx=     1 sBx=-131070 ; 16
+   4 L135  SETLIST    A=  1 B=   2 C=   1 Bx=  1025 sBx=-130046
+   5 L136  LOADK      A=  2 B=   0 C=   2 Bx=     2 sBx=-131069 ; 1
+   6 L136  LEN        A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+   7 L136  LOADK      A=  4 B=   0 C=   2 Bx=     2 sBx=-131069 ; 1
+   8 L136  FORPREP    A=  2 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 11
+   9 L136  GETTABLE   A=  6 B=   1 C=   5 Bx=   517 sBx=-130554 ; R1 R5
+  10 L136  SETTABLE   A=  0 B=   6 C= 259 Bx=  3331 sBx=-127740 ; R6 True
+  11 L136  FORLOOP    A=  2 B= 255 C= 508 Bx=131068 sBx=     -3 ; -> 9
+  12 L137  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  13 L138  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F19 params=0 vararg=0 ups=0 stack=8 lines=143-183 ncode=48 =====
+consts:
+  K0=1
+  K1="texture gTexture;\n"
+  K2="texture gScreenSource;\n"
+  K3="float gCropHeight = 0.5;\n"
+  K4="float gIntensity  = 0.0;\n"
+  K5=2
+  K6="sampler2D VideoSampler  = sampler_state"
+  K7="{ Texture = <gTexture>;"
+  K8="  MinFilter = LINEAR; MagFilter = LINEAR; };\n"
+  K9="sampler2D ScreenSampler = sampler_state"
+  K10="{ Texture = <gScreenSource>;"
+  K11=3
+  K12="struct PSInput { float2 TexCoord : TEXCOORD0; };\n"
+  K13=4
+  K14="float4 PS_Main(PSInput IN) : COLOR0\n{\n"
+  K15="    float2 uv = IN.TexCoord;\n"
+  K16="    if (gIntensity <= 0.001)\n    {\n"
+  K17="        float3 plain = tex2D(ScreenSampler, uv).rgb;\n"
+  K18="        return float4(plain, 1.0);\n    }\n"
+  K19=5
+  K20="    float2 rainUV = float2(uv.x, uv.y * gCropHeight);\n"
+  K21="    float4 vid = tex2D(VideoSampler, rainUV);\n"
+  K22="    float luma = dot(vid.rgb, float3(0.299, 0.587, 0.114));\n"
+  K23="    float2 offset = (float2(luma,luma) - 0.1)"
+  K24=" * 0.008 * gIntensity;\n"
+  K25="    float3 scene = tex2D(ScreenSampler,"
+  K26=" saturate(uv + offset)).rgb;\n"
+  K27=6
+  K28="    float3 blended = 1.0 - (1.0 - scene) * (1.0 - vid.rgb);\n"
+  K29="    float3 finalCol = lerp(scene, blended, gIntensity);\n"
+  K30="    return float4(finalCol, 1.0);\n}\n"
+  K31=7
+  K32="technique BlackScreenRain\n{\n"
+  K33="    pass P0 { PixelShader ="
+  K34=" compile ps_2_0 PS_Main(); }\n}\n"
+  K35="table"
+  K36="concat"
+code:
+   0 L144  NEWTABLE   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L147  LOADK      A=  1 B=   0 C=   1 Bx=     1 sBx=-131070 ; "texture gTexture;\n"
+   2 L148  LOADK      A=  2 B=   0 C=   2 Bx=     2 sBx=-131069 ; "texture gScreenSource;\n"
+   3 L149  LOADK      A=  3 B=   0 C=   3 Bx=     3 sBx=-131068 ; "float gCropHeight = 0.5;\n"
+   4 L149  LOADK      A=  4 B=   0 C=   4 Bx=     4 sBx=-131067 ; "float gIntensity  = 0.0;\n"
+   5 L149  CONCAT     A=  1 B=   1 C=   4 Bx=   516 sBx=-130555 ; R1 R4
+   6 L149  SETTABLE   A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; 1 R1
+   7 L152  LOADK      A=  1 B=   0 C=   6 Bx=     6 sBx=-131065 ; "sampler2D VideoSampler  = sampler_state"
+   8 L153  LOADK      A=  2 B=   0 C=   7 Bx=     7 sBx=-131064 ; "{ Texture = <gTexture>;"
+   9 L154  LOADK      A=  3 B=   0 C=   8 Bx=     8 sBx=-131063 ; "  MinFilter = LINEAR; MagFilter = LINEAR; };\n"
+  10 L155  LOADK      A=  4 B=   0 C=   9 Bx=     9 sBx=-131062 ; "sampler2D ScreenSampler = sampler_state"
+  11 L156  LOADK      A=  5 B=   0 C=  10 Bx=    10 sBx=-131061 ; "{ Texture = <gScreenSource>;"
+  12 L156  LOADK      A=  6 B=   0 C=   8 Bx=     8 sBx=-131063 ; "  MinFilter = LINEAR; MagFilter = LINEAR; };\n"
+  13 L156  CONCAT     A=  1 B=   1 C=   6 Bx=   518 sBx=-130553 ; R1 R6
+  14 L156  SETTABLE   A=  0 B= 261 C=   1 Bx=133633 sBx=   2562 ; 2 R1
+  15 L158  SETTABLE   A=  0 B= 267 C= 268 Bx=136972 sBx=   5901 ; 3 "struct PSInput { float2 TexCoord : TEXCOORD0; };\n"
+  16 L161  LOADK      A=  1 B=   0 C=  14 Bx=    14 sBx=-131057 ; "float4 PS_Main(PSInput IN) : COLOR0\n{\n"
+  17 L162  LOADK      A=  2 B=   0 C=  15 Bx=    15 sBx=-131056 ; "    float2 uv = IN.TexCoord;\n"
+  18 L163  LOADK      A=  3 B=   0 C=  16 Bx=    16 sBx=-131055 ; "    if (gIntensity <= 0.001)\n    {\n"
+  19 L164  LOADK      A=  4 B=   0 C=  17 Bx=    17 sBx=-131054 ; "        float3 plain = tex2D(ScreenSampler, uv).rgb;\n"
+  20 L164  LOADK      A=  5 B=   0 C=  18 Bx=    18 sBx=-131053 ; "        return float4(plain, 1.0);\n    }\n"
+  21 L164  CONCAT     A=  1 B=   1 C=   5 Bx=   517 sBx=-130554 ; R1 R5
+  22 L164  SETTABLE   A=  0 B= 269 C=   1 Bx=137729 sBx=   6658 ; 4 R1
+  23 L167  LOADK      A=  1 B=   0 C=  20 Bx=    20 sBx=-131051 ; "    float2 rainUV = float2(uv.x, uv.y * gCropHeight);\n"
+  24 L168  LOADK      A=  2 B=   0 C=  21 Bx=    21 sBx=-131050 ; "    float4 vid = tex2D(VideoSampler, rainUV);\n"
+  25 L169  LOADK      A=  3 B=   0 C=  22 Bx=    22 sBx=-131049 ; "    float luma = dot(vid.rgb, float3(0.299, 0.587, 0.114));\n"
+  26 L170  LOADK      A=  4 B=   0 C=  23 Bx=    23 sBx=-131048 ; "    float2 offset = (float2(luma,luma) - 0.1)"
+  27 L171  LOADK      A=  5 B=   0 C=  24 Bx=    24 sBx=-131047 ; " * 0.008 * gIntensity;\n"
+  28 L172  LOADK      A=  6 B=   0 C=  25 Bx=    25 sBx=-131046 ; "    float3 scene = tex2D(ScreenSampler,"
+  29 L172  LOADK      A=  7 B=   0 C=  26 Bx=    26 sBx=-131045 ; " saturate(uv + offset)).rgb;\n"
+  30 L172  CONCAT     A=  1 B=   1 C=   7 Bx=   519 sBx=-130552 ; R1 R7
+  31 L172  SETTABLE   A=  0 B= 275 C=   1 Bx=140801 sBx=   9730 ; 5 R1
+  32 L175  LOADK      A=  1 B=   0 C=  28 Bx=    28 sBx=-131043 ; "    float3 blended = 1.0 - (1.0 - scene) * (1.0 - vid.rgb);\n"
+  33 L176  LOADK      A=  2 B=   0 C=  29 Bx=    29 sBx=-131042 ; "    float3 finalCol = lerp(scene, blended, gIntensity);\n"
+  34 L176  LOADK      A=  3 B=   0 C=  30 Bx=    30 sBx=-131041 ; "    return float4(finalCol, 1.0);\n}\n"
+  35 L176  CONCAT     A=  1 B=   1 C=   3 Bx=   515 sBx=-130556 ; R1 R3
+  36 L176  SETTABLE   A=  0 B= 283 C=   1 Bx=144897 sBx=  13826 ; 6 R1
+  37 L179  LOADK      A=  1 B=   0 C=  32 Bx=    32 sBx=-131039 ; "technique BlackScreenRain\n{\n"
+  38 L180  LOADK      A=  2 B=   0 C=  33 Bx=    33 sBx=-131038 ; "    pass P0 { PixelShader ="
+  39 L180  LOADK      A=  3 B=   0 C=  34 Bx=    34 sBx=-131037 ; " compile ps_2_0 PS_Main(); }\n}\n"
+  40 L180  CONCAT     A=  1 B=   1 C=   3 Bx=   515 sBx=-130556 ; R1 R3
+  41 L180  SETTABLE   A=  0 B= 287 C=   1 Bx=146945 sBx=  15874 ; 7 R1
+  42 L182  GETGLOBAL  A=  1 B=   0 C=  35 Bx=    35 sBx=-131036 ; 'table'
+  43 L182  GETTABLE   A=  1 B=   1 C= 292 Bx=   804 sBx=-130267 ; R1 "concat"
+  44 L182  MOVE       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  45 L182  TAILCALL   A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  46 L182  RETURN     A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  47 L183  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F20 params=1 vararg=0 ups=0 stack=3 lines=213-218 ncode=11 =====
+consts:
+  K0=None
+  K1="type"
+  K2="number"
+  K3=1
+code:
+   0 L214  EQ         A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 None
+   1 L214  JMP        A=  0 B= 256 C=   6 Bx=131078 sBx=      7 ; -> 9
+   2 L214  GETGLOBAL  A=  1 B=   0 C=   1 Bx=     1 sBx=-131070 ; 'type'
+   3 L214  MOVE       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L214  CALL       A=  1 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+   5 L214  EQ         A=  0 B=   1 C= 258 Bx=   770 sBx=-130301 ; R1 "number"
+   6 L214  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 9
+   7 L215  ADD        A=  1 B=   0 C= 259 Bx=   259 sBx=-130812 ; R0 1
+   8 L215  RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+   9 L217  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  10 L218  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F21 params=2 vararg=0 ups=0 stack=3 lines=220-225 ncode=13 =====
+consts:
+  K0=None
+  K1=57005
+code:
+   0 L221  EQ         A=  1 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 None
+   1 L221  JMP        A=  0 B= 256 C=   7 Bx=131079 sBx=      8 ; -> 10
+   2 L221  EQ         A=  1 B=   1 C= 256 Bx=   768 sBx=-130303 ; R1 None
+   3 L221  JMP        A=  0 B= 256 C=   5 Bx=131077 sBx=      6 ; -> 10
+   4 L221  EQ         A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   5 L221  JMP        A=  0 B= 256 C=   3 Bx=131075 sBx=      4 ; -> 10
+   6 L221  EQ         A=  0 B=   0 C= 257 Bx=   257 sBx=-130814 ; R0 57005
+   7 L221  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 10
+   8 L222  LOADBOOL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+   9 L222  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  10 L224  LOADBOOL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  11 L224  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  12 L225  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F22 params=1 vararg=0 ups=1 stack=3 lines=228-230 ncode=11 =====
+consts:
+  K0="ie"
+code:
+   0 L229  TEST       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L229  JMP        A=  0 B= 256 C=   5 Bx=131077 sBx=      6 ; -> 8
+   2 L229  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L229  GETTABLE   A=  1 B=   1 C= 256 Bx=   768 sBx=-130303 ; R1 "ie"
+   4 L229  MOVE       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L229  CALL       A=  1 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+   6 L229  TEST       A=  1 B=   0 C=   1 Bx=     1 sBx=-131070
+   7 L229  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 9
+   8 L229  LOADBOOL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+   9 L229  RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  10 L230  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F23 params=2 vararg=0 ups=1 stack=6 lines=233-235 ncode=12 =====
+consts:
+  K0="ods"
+  K1="[Rain] "
+  K2="tostring"
+  K3=3
+code:
+   0 L234  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L234  GETTABLE   A=  2 B=   2 C= 256 Bx=  1280 sBx=-129791 ; R2 "ods"
+   2 L234  LOADK      A=  3 B=   0 C=   1 Bx=     1 sBx=-131070 ; "[Rain] "
+   3 L234  GETGLOBAL  A=  4 B=   0 C=   2 Bx=     2 sBx=-131069 ; 'tostring'
+   4 L234  MOVE       A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L234  CALL       A=  4 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+   6 L234  CONCAT     A=  3 B=   3 C=   4 Bx=  1540 sBx=-129531 ; R3 R4
+   7 L234  TESTSET    A=  4 B=   1 C=   1 Bx=   513 sBx=-130558
+   8 L234  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 10
+   9 L234  LOADK      A=  4 B=   0 C=   3 Bx=     3 sBx=-131068 ; 3
+  10 L234  CALL       A=  2 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  11 L235  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F24 params=0 vararg=0 ups=2 stack=3 lines=238-244 ncode=10 =====
+consts:
+  K0="fmtPath"
+  K1="folder"
+code:
+   0 L239  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L239  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "fmtPath"
+   2 L240  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L240  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "folder"
+   4 L243  CLOSURE    A=  2 B=   0 C=   0 Bx=     0 sBx=-131071 ; F25
+   5 L243  GETUPVAL   A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   6 L243  MOVE       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   7 L243  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   8 L243  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+   9 L244  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F25 params=1 vararg=0 ups=3 stack=5 lines=241-243 ncode=8 =====
+consts:
+  K0="sfmt"
+code:
+   0 L242  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L242  GETTABLE   A=  1 B=   1 C= 256 Bx=   768 sBx=-130303 ; R1 "sfmt"
+   2 L242  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L242  GETUPVAL   A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+   4 L242  MOVE       A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L242  TAILCALL   A=  1 B=   4 C=   0 Bx=  2048 sBx=-129023
+   6 L242  RETURN     A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   7 L243  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F26 params=0 vararg=0 ups=4 stack=7 lines=247-269 ncode=63 =====
+consts:
+  K0="state"
+  K1="CLEANUP"
+  K2="textures"
+  K3=1
+  K4="de"
+  K5=None
+  K6="shader"
+  K7="screen"
+  K8=False
+  K9="lIlIl"
+  K10="lIIll"
+  K11=0
+  K12="lllIl"
+  K13="llIIl"
+  K14="IDLE"
+code:
+   0 L248  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L248  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   2 L248  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "CLEANUP"
+   3 L248  SETTABLE   A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; "state" R1
+   4 L250  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L250  GETTABLE   A=  0 B=   0 C= 258 Bx=   258 sBx=-130813 ; R0 "textures"
+   6 L251  LOADK      A=  1 B=   0 C=   3 Bx=     3 sBx=-131068 ; 1
+   7 L251  LEN        A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   8 L251  LOADK      A=  3 B=   0 C=   3 Bx=     3 sBx=-131068 ; 1
+   9 L251  FORPREP    A=  1 B= 256 C=   9 Bx=131081 sBx=     10 ; -> 20
+  10 L252  GETUPVAL   A=  5 B=   2 C=   0 Bx=  1024 sBx=-130047
+  11 L252  GETTABLE   A=  6 B=   0 C=   4 Bx=     4 sBx=-131067 ; R0 R4
+  12 L252  CALL       A=  5 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  13 L252  TEST       A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+  14 L252  JMP        A=  0 B= 256 C=   3 Bx=131075 sBx=      4 ; -> 19
+  15 L253  GETUPVAL   A=  5 B=   3 C=   0 Bx=  1536 sBx=-129535
+  16 L253  GETTABLE   A=  5 B=   5 C= 260 Bx=  2820 sBx=-128251 ; R5 "de"
+  17 L253  GETTABLE   A=  6 B=   0 C=   4 Bx=     4 sBx=-131067 ; R0 R4
+  18 L253  CALL       A=  5 B=   2 C=   1 Bx=  1025 sBx=-130046 ; nargs=1 nret=0
+  19 L255  SETTABLE   A=  0 B=   4 C= 261 Bx=  2309 sBx=-128762 ; R4 None
+  20 L251  FORLOOP    A=  1 B= 255 C= 500 Bx=131060 sBx=    -11 ; -> 10
+  21 L257  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  22 L257  NEWTABLE   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  23 L257  SETTABLE   A=  1 B= 258 C=   2 Bx=132098 sBx=   1027 ; "textures" R2
+  24 L259  GETUPVAL   A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  25 L259  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  26 L259  GETTABLE   A=  2 B=   2 C= 262 Bx=  1286 sBx=-129785 ; R2 "shader"
+  27 L259  CALL       A=  1 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  28 L259  TEST       A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  29 L259  JMP        A=  0 B= 256 C=   4 Bx=131076 sBx=      5 ; -> 35
+  30 L259  GETUPVAL   A=  1 B=   3 C=   0 Bx=  1536 sBx=-129535
+  31 L259  GETTABLE   A=  1 B=   1 C= 260 Bx=   772 sBx=-130299 ; R1 "de"
+  32 L259  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  33 L259  GETTABLE   A=  2 B=   2 C= 262 Bx=  1286 sBx=-129785 ; R2 "shader"
+  34 L259  CALL       A=  1 B=   2 C=   1 Bx=  1025 sBx=-130046 ; nargs=1 nret=0
+  35 L260  GETUPVAL   A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  36 L260  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  37 L260  GETTABLE   A=  2 B=   2 C= 263 Bx=  1287 sBx=-129784 ; R2 "screen"
+  38 L260  CALL       A=  1 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  39 L260  TEST       A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  40 L260  JMP        A=  0 B= 256 C=   4 Bx=131076 sBx=      5 ; -> 46
+  41 L260  GETUPVAL   A=  1 B=   3 C=   0 Bx=  1536 sBx=-129535
+  42 L260  GETTABLE   A=  1 B=   1 C= 260 Bx=   772 sBx=-130299 ; R1 "de"
+  43 L260  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  44 L260  GETTABLE   A=  2 B=   2 C= 263 Bx=  1287 sBx=-129784 ; R2 "screen"
+  45 L260  CALL       A=  1 B=   2 C=   1 Bx=  1025 sBx=-130046 ; nargs=1 nret=0
+  46 L262  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  47 L262  SETTABLE   A=  1 B= 262 C= 264 Bx=134408 sBx=   3337 ; "shader" False
+  48 L263  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  49 L263  SETTABLE   A=  1 B= 263 C= 264 Bx=134920 sBx=   3849 ; "screen" False
+  50 L264  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  51 L264  SETTABLE   A=  1 B= 265 C= 259 Bx=135939 sBx=   4868 ; "lIlIl" 1
+  52 L265  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  53 L265  SETTABLE   A=  1 B= 266 C= 267 Bx=136459 sBx=   5388 ; "lIIll" 0
+  54 L266  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  55 L266  SETTABLE   A=  1 B= 268 C= 267 Bx=137483 sBx=   6412 ; "lllIl" 0
+  56 L267  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  57 L267  SETTABLE   A=  1 B= 269 C= 261 Bx=137989 sBx=   6918 ; "llIIl" None
+  58 L268  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  59 L268  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  60 L268  GETTABLE   A=  2 B=   2 C= 270 Bx=  1294 sBx=-129777 ; R2 "IDLE"
+  61 L268  SETTABLE   A=  1 B= 256 C=   2 Bx=131074 sBx=      3 ; "state" R2
+  62 L269  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F27 params=0 vararg=0 ups=6 stack=10 lines=272-295 ncode=50 =====
+consts:
+  K0=0
+  K1="maxTex"
+  K2=-1
+  K3=1
+  K4="fe"
+  K5="ctx"
+  K6="textures"
+  K7="Loaded: "
+  K8=3
+code:
+   0 L273  LOADK      A=  0 B=   0 C=   0 Bx=     0 sBx=-131071 ; 0
+   1 L274  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   2 L274  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "maxTex"
+   3 L274  CALL       A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   4 L277  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+   5 L277  LOADNIL    A=  3 B=   4 C=   0 Bx=  2048 sBx=-129023
+   6 L277  CALL       A=  2 B=   3 C=   2 Bx=  1538 sBx=-129533 ; nargs=2 nret=1
+   7 L277  TEST       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   8 L277  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 10
+   9 L278  LOADK      A=  0 B=   0 C=   2 Bx=     2 sBx=-131069 ; -1
+  10 L281  LOADK      A=  2 B=   0 C=   3 Bx=     3 sBx=-131068 ; 1
+  11 L281  MOVE       A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+  12 L281  LOADK      A=  4 B=   0 C=   3 Bx=     3 sBx=-131068 ; 1
+  13 L281  FORPREP    A=  2 B= 256 C=  22 Bx=131094 sBx=     23 ; -> 37
+  14 L282  GETUPVAL   A=  6 B=   2 C=   0 Bx=  1024 sBx=-130047
+  15 L282  MOVE       A=  7 B=   5 C=   0 Bx=  2560 sBx=-128511
+  16 L282  CALL       A=  6 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  17 L284  GETUPVAL   A=  7 B=   3 C=   0 Bx=  1536 sBx=-129535
+  18 L284  GETTABLE   A=  7 B=   7 C= 260 Bx=  3844 sBx=-127227 ; R7 "fe"
+  19 L284  MOVE       A=  8 B=   6 C=   0 Bx=  3072 sBx=-127999
+  20 L284  CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  21 L284  TEST       A=  7 B=   0 C=   0 Bx=     0 sBx=-131071
+  22 L284  JMP        A=  0 B= 256 C=  13 Bx=131085 sBx=     14 ; -> 37
+  23 L285  GETUPVAL   A=  7 B=   3 C=   0 Bx=  1536 sBx=-129535
+  24 L285  GETTABLE   A=  7 B=   7 C= 261 Bx=  3845 sBx=-127226 ; R7 "ctx"
+  25 L285  MOVE       A=  8 B=   6 C=   0 Bx=  3072 sBx=-127999
+  26 L285  CALL       A=  7 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  27 L286  TEST       A=  7 B=   0 C=   0 Bx=     0 sBx=-131071
+  28 L286  JMP        A=  0 B= 256 C=   7 Bx=131079 sBx=      8 ; -> 37
+  29 L287  GETUPVAL   A=  8 B=   4 C=   0 Bx=  2048 sBx=-129023
+  30 L287  GETTABLE   A=  8 B=   8 C= 262 Bx=  4358 sBx=-126713 ; R8 "textures"
+  31 L287  GETUPVAL   A=  9 B=   4 C=   0 Bx=  2048 sBx=-129023
+  32 L287  GETTABLE   A=  9 B=   9 C= 262 Bx=  4870 sBx=-126201 ; R9 "textures"
+  33 L287  LEN        A=  9 B=   9 C=   0 Bx=  4608 sBx=-126463
+  34 L287  ADD        A=  9 B=   9 C= 259 Bx=  4867 sBx=-126204 ; R9 1
+  35 L287  SETTABLE   A=  8 B=   9 C=   7 Bx=  4615 sBx=-126456 ; R9 R7
+  36 L288  ADD        A=  0 B=   0 C= 259 Bx=   259 sBx=-130812 ; R0 1
+  37 L281  FORLOOP    A=  2 B= 255 C= 487 Bx=131047 sBx=    -24 ; -> 14
+  38 L293  GETUPVAL   A=  2 B=   5 C=   0 Bx=  2560 sBx=-128511
+  39 L293  LOADK      A=  3 B=   0 C=   7 Bx=     7 sBx=-131064 ; "Loaded: "
+  40 L293  MOVE       A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  41 L293  CONCAT     A=  3 B=   3 C=   4 Bx=  1540 sBx=-129531 ; R3 R4
+  42 L293  LOADK      A=  4 B=   0 C=   8 Bx=     8 sBx=-131063 ; 3
+  43 L293  CALL       A=  2 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  44 L294  LT         A=  1 B= 256 C=   0 Bx=131072 sBx=      1 ; 0 R0
+  45 L294  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 47
+  46 L294  LOADBOOL   A=  2 B=   0 C=   1 Bx=     1 sBx=-131070 ; False skip=1
+  47 L294  LOADBOOL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+  48 L294  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  49 L295  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F28 params=0 vararg=0 ups=10 stack=8 lines=298-355 ncode=163 =====
+consts:
+  K0="state"
+  K1="INIT"
+  K2="gss"
+  K3="Screen size failed"
+  K4=1
+  K5="ERROR"
+  K6=255
+  K7=0
+  K8="lIlII"
+  K9="lIIlI"
+  K10="csh"
+  K11="Shader failed"
+  K12="shader"
+  K13="css"
+  K14="ScreenSource failed"
+  K15="screen"
+  K16="No textures found"
+  K17="ssv"
+  K18="pSrc"
+  K19="pCrop"
+  K20="crop"
+  K21="pInt"
+  K22="zero"
+  K23="textures"
+  K24="pTex"
+  K25="lIIll"
+  K26="llIIl"
+  K27="gtc"
+  K28="lIlIl"
+  K29="lllII"
+  K30="RUNNING"
+  K31="Running - "
+  K32=" textures"
+  K33=3
+code:
+   0 L299  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L299  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   2 L299  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "INIT"
+   3 L299  SETTABLE   A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; "state" R1
+   4 L301  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   5 L301  GETTABLE   A=  0 B=   0 C= 258 Bx=   258 sBx=-130813 ; R0 "gss"
+   6 L301  CALL       A=  0 B=   1 C=   3 Bx=   515 sBx=-130556 ; nargs=0 nret=2
+   7 L303  TEST       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   8 L303  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 11
+   9 L303  TEST       A=  1 B=   0 C=   1 Bx=     1 sBx=-131070
+  10 L303  JMP        A=  0 B= 256 C=   9 Bx=131081 sBx=     10 ; -> 21
+  11 L304  GETUPVAL   A=  2 B=   3 C=   0 Bx=  1536 sBx=-129535
+  12 L304  LOADK      A=  3 B=   0 C=   3 Bx=     3 sBx=-131068 ; "Screen size failed"
+  13 L304  LOADK      A=  4 B=   0 C=   4 Bx=     4 sBx=-131067 ; 1
+  14 L304  CALL       A=  2 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  15 L305  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  16 L305  GETUPVAL   A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+  17 L305  GETTABLE   A=  3 B=   3 C= 261 Bx=  1797 sBx=-129274 ; R3 "ERROR"
+  18 L305  SETTABLE   A=  2 B= 256 C=   3 Bx=131075 sBx=      4 ; "state" R3
+  19 L306  LOADBOOL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  20 L306  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  21 L310  GETUPVAL   A=  2 B=   4 C=   0 Bx=  2048 sBx=-129023
+  22 L310  LOADNIL    A=  3 B=   3 C=   0 Bx=  1536 sBx=-129535
+  23 L310  CALL       A=  2 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  24 L310  EQ         A=  0 B=   2 C= 262 Bx=  1286 sBx=-129785 ; R2 255
+  25 L310  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 27
+  26 L310  LOADK      A=  0 B=   0 C=   7 Bx=     7 sBx=-131064 ; 0
+  27 L312  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  28 L312  SETTABLE   A=  2 B= 264 C=   0 Bx=135168 sBx=   4097 ; "lIlII" R0
+  29 L313  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  30 L313  SETTABLE   A=  2 B= 265 C=   1 Bx=135681 sBx=   4610 ; "lIIlI" R1
+  31 L315  GETUPVAL   A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  32 L315  GETTABLE   A=  2 B=   2 C= 266 Bx=  1290 sBx=-129781 ; R2 "csh"
+  33 L315  GETUPVAL   A=  3 B=   5 C=   0 Bx=  2560 sBx=-128511
+  34 L315  CALL       A=  2 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  35 L316  TEST       A=  2 B=   0 C=   1 Bx=     1 sBx=-131070
+  36 L316  JMP        A=  0 B= 256 C=   9 Bx=131081 sBx=     10 ; -> 47
+  37 L317  GETUPVAL   A=  3 B=   3 C=   0 Bx=  1536 sBx=-129535
+  38 L317  LOADK      A=  4 B=   0 C=  11 Bx=    11 sBx=-131060 ; "Shader failed"
+  39 L317  LOADK      A=  5 B=   0 C=   4 Bx=     4 sBx=-131067 ; 1
+  40 L317  CALL       A=  3 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  41 L318  GETUPVAL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  42 L318  GETUPVAL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+  43 L318  GETTABLE   A=  4 B=   4 C= 261 Bx=  2309 sBx=-128762 ; R4 "ERROR"
+  44 L318  SETTABLE   A=  3 B= 256 C=   4 Bx=131076 sBx=      5 ; "state" R4
+  45 L319  LOADBOOL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  46 L319  RETURN     A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  47 L321  GETUPVAL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  48 L321  SETTABLE   A=  3 B= 268 C=   2 Bx=137218 sBx=   6147 ; "shader" R2
+  49 L323  GETUPVAL   A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  50 L323  GETTABLE   A=  3 B=   3 C= 269 Bx=  1805 sBx=-129266 ; R3 "css"
+  51 L323  MOVE       A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  52 L323  MOVE       A=  5 B=   1 C=   0 Bx=   512 sBx=-130559
+  53 L323  CALL       A=  3 B=   3 C=   2 Bx=  1538 sBx=-129533 ; nargs=2 nret=1
+  54 L324  TEST       A=  3 B=   0 C=   1 Bx=     1 sBx=-131070
+  55 L324  JMP        A=  0 B= 256 C=  11 Bx=131083 sBx=     12 ; -> 68
+  56 L325  GETUPVAL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  57 L325  LOADK      A=  5 B=   0 C=  14 Bx=    14 sBx=-131057 ; "ScreenSource failed"
+  58 L325  LOADK      A=  6 B=   0 C=   4 Bx=     4 sBx=-131067 ; 1
+  59 L325  CALL       A=  4 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  60 L326  GETUPVAL   A=  4 B=   6 C=   0 Bx=  3072 sBx=-127999
+  61 L326  CALL       A=  4 B=   1 C=   1 Bx=   513 sBx=-130558 ; nargs=0 nret=0
+  62 L327  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  63 L327  GETUPVAL   A=  5 B=   1 C=   0 Bx=   512 sBx=-130559
+  64 L327  GETTABLE   A=  5 B=   5 C= 261 Bx=  2821 sBx=-128250 ; R5 "ERROR"
+  65 L327  SETTABLE   A=  4 B= 256 C=   5 Bx=131077 sBx=      6 ; "state" R5
+  66 L328  LOADBOOL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  67 L328  RETURN     A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+  68 L330  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  69 L330  SETTABLE   A=  4 B= 271 C=   3 Bx=138755 sBx=   7684 ; "screen" R3
+  70 L332  GETUPVAL   A=  4 B=   7 C=   0 Bx=  3584 sBx=-127487
+  71 L332  CALL       A=  4 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  72 L332  TEST       A=  4 B=   0 C=   1 Bx=     1 sBx=-131070
+  73 L332  JMP        A=  0 B= 256 C=  11 Bx=131083 sBx=     12 ; -> 86
+  74 L333  GETUPVAL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  75 L333  LOADK      A=  5 B=   0 C=  16 Bx=    16 sBx=-131055 ; "No textures found"
+  76 L333  LOADK      A=  6 B=   0 C=   4 Bx=     4 sBx=-131067 ; 1
+  77 L333  CALL       A=  4 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  78 L334  GETUPVAL   A=  4 B=   6 C=   0 Bx=  3072 sBx=-127999
+  79 L334  CALL       A=  4 B=   1 C=   1 Bx=   513 sBx=-130558 ; nargs=0 nret=0
+  80 L335  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  81 L335  GETUPVAL   A=  5 B=   1 C=   0 Bx=   512 sBx=-130559
+  82 L335  GETTABLE   A=  5 B=   5 C= 261 Bx=  2821 sBx=-128250 ; R5 "ERROR"
+  83 L335  SETTABLE   A=  4 B= 256 C=   5 Bx=131077 sBx=      6 ; "state" R5
+  84 L336  LOADBOOL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  85 L336  RETURN     A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+  86 L339  GETUPVAL   A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+  87 L339  GETTABLE   A=  4 B=   4 C= 273 Bx=  2321 sBx=-128750 ; R4 "ssv"
+  88 L339  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+  89 L339  GETTABLE   A=  5 B=   5 C= 268 Bx=  2828 sBx=-128243 ; R5 "shader"
+  90 L339  GETUPVAL   A=  6 B=   8 C=   0 Bx=  4096 sBx=-126975
+  91 L339  GETTABLE   A=  6 B=   6 C= 274 Bx=  3346 sBx=-127725 ; R6 "pSrc"
+  92 L339  GETUPVAL   A=  7 B=   0 C=   0 Bx=     0 sBx=-131071
+  93 L339  GETTABLE   A=  7 B=   7 C= 271 Bx=  3855 sBx=-127216 ; R7 "screen"
+  94 L339  CALL       A=  4 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+  95 L340  GETUPVAL   A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+  96 L340  GETTABLE   A=  4 B=   4 C= 273 Bx=  2321 sBx=-128750 ; R4 "ssv"
+  97 L340  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+  98 L340  GETTABLE   A=  5 B=   5 C= 268 Bx=  2828 sBx=-128243 ; R5 "shader"
+  99 L340  GETUPVAL   A=  6 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 100 L340  GETTABLE   A=  6 B=   6 C= 275 Bx=  3347 sBx=-127724 ; R6 "pCrop"
+ 101 L340  GETUPVAL   A=  7 B=   9 C=   0 Bx=  4608 sBx=-126463
+ 102 L340  GETTABLE   A=  7 B=   7 C= 276 Bx=  3860 sBx=-127211 ; R7 "crop"
+ 103 L340  CALL       A=  7 B=   1 C=   0 Bx=   512 sBx=-130559 ; nargs=0 nret=var
+ 104 L340  CALL       A=  4 B=   0 C=   1 Bx=     1 sBx=-131070 ; nargs=var nret=0
+ 105 L341  GETUPVAL   A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+ 106 L341  GETTABLE   A=  4 B=   4 C= 273 Bx=  2321 sBx=-128750 ; R4 "ssv"
+ 107 L341  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+ 108 L341  GETTABLE   A=  5 B=   5 C= 268 Bx=  2828 sBx=-128243 ; R5 "shader"
+ 109 L341  GETUPVAL   A=  6 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 110 L341  GETTABLE   A=  6 B=   6 C= 277 Bx=  3349 sBx=-127722 ; R6 "pInt"
+ 111 L341  GETUPVAL   A=  7 B=   9 C=   0 Bx=  4608 sBx=-126463
+ 112 L341  GETTABLE   A=  7 B=   7 C= 278 Bx=  3862 sBx=-127209 ; R7 "zero"
+ 113 L341  CALL       A=  7 B=   1 C=   0 Bx=   512 sBx=-130559 ; nargs=0 nret=var
+ 114 L341  CALL       A=  4 B=   0 C=   1 Bx=     1 sBx=-131070 ; nargs=var nret=0
+ 115 L343  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 116 L343  GETTABLE   A=  4 B=   4 C= 279 Bx=  2327 sBx=-128744 ; R4 "textures"
+ 117 L343  GETTABLE   A=  4 B=   4 C= 260 Bx=  2308 sBx=-128763 ; R4 1
+ 118 L343  TEST       A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 119 L343  JMP        A=  0 B= 256 C=   9 Bx=131081 sBx=     10 ; -> 130
+ 120 L344  GETUPVAL   A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+ 121 L344  GETTABLE   A=  4 B=   4 C= 273 Bx=  2321 sBx=-128750 ; R4 "ssv"
+ 122 L344  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+ 123 L344  GETTABLE   A=  5 B=   5 C= 268 Bx=  2828 sBx=-128243 ; R5 "shader"
+ 124 L344  GETUPVAL   A=  6 B=   8 C=   0 Bx=  4096 sBx=-126975
+ 125 L344  GETTABLE   A=  6 B=   6 C= 280 Bx=  3352 sBx=-127719 ; R6 "pTex"
+ 126 L344  GETUPVAL   A=  7 B=   0 C=   0 Bx=     0 sBx=-131071
+ 127 L344  GETTABLE   A=  7 B=   7 C= 279 Bx=  3863 sBx=-127208 ; R7 "textures"
+ 128 L344  GETTABLE   A=  7 B=   7 C= 260 Bx=  3844 sBx=-127227 ; R7 1
+ 129 L344  CALL       A=  4 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+ 130 L347  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 131 L347  GETUPVAL   A=  5 B=   9 C=   0 Bx=  4608 sBx=-126463
+ 132 L347  GETTABLE   A=  5 B=   5 C= 278 Bx=  2838 sBx=-128233 ; R5 "zero"
+ 133 L347  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 134 L347  SETTABLE   A=  4 B= 281 C=   5 Bx=143877 sBx=  12806 ; "lIIll" R5
+ 135 L348  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 136 L348  GETUPVAL   A=  5 B=   2 C=   0 Bx=  1024 sBx=-130047
+ 137 L348  GETTABLE   A=  5 B=   5 C= 283 Bx=  2843 sBx=-128228 ; R5 "gtc"
+ 138 L348  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 139 L348  SETTABLE   A=  4 B= 282 C=   5 Bx=144389 sBx=  13318 ; "llIIl" R5
+ 140 L349  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 141 L349  SETTABLE   A=  4 B= 284 C= 260 Bx=145668 sBx=  14597 ; "lIlIl" 1
+ 142 L350  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 143 L350  GETUPVAL   A=  5 B=   2 C=   0 Bx=  1024 sBx=-130047
+ 144 L350  GETTABLE   A=  5 B=   5 C= 283 Bx=  2843 sBx=-128228 ; R5 "gtc"
+ 145 L350  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+ 146 L350  SETTABLE   A=  4 B= 285 C=   5 Bx=145925 sBx=  14854 ; "lllII" R5
+ 147 L351  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+ 148 L351  GETUPVAL   A=  5 B=   1 C=   0 Bx=   512 sBx=-130559
+ 149 L351  GETTABLE   A=  5 B=   5 C= 286 Bx=  2846 sBx=-128225 ; R5 "RUNNING"
+ 150 L351  SETTABLE   A=  4 B= 256 C=   5 Bx=131077 sBx=      6 ; "state" R5
+ 151 L353  GETUPVAL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+ 152 L353  LOADK      A=  5 B=   0 C=  31 Bx=    31 sBx=-131040 ; "Running - "
+ 153 L353  GETUPVAL   A=  6 B=   0 C=   0 Bx=     0 sBx=-131071
+ 154 L353  GETTABLE   A=  6 B=   6 C= 279 Bx=  3351 sBx=-127720 ; R6 "textures"
+ 155 L353  LEN        A=  6 B=   6 C=   0 Bx=  3072 sBx=-127999
+ 156 L353  LOADK      A=  7 B=   0 C=  32 Bx=    32 sBx=-131039 ; " textures"
+ 157 L353  CONCAT     A=  5 B=   5 C=   7 Bx=  2567 sBx=-128504 ; R5 R7
+ 158 L353  LOADK      A=  6 B=   0 C=  33 Bx=    33 sBx=-131038 ; 3
+ 159 L353  CALL       A=  4 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+ 160 L354  LOADBOOL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+ 161 L354  RETURN     A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+ 162 L355  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F29 params=0 vararg=0 ups=4 stack=3 lines=358-373 ncode=11 =====
+consts:
+  K0="rainThres"
+code:
+   0 L359  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L359  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "rainThres"
+   2 L360  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L372  CLOSURE    A=  2 B=   0 C=   0 Bx=     0 sBx=-131071 ; F30
+   4 L372  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   5 L372  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   6 L372  GETUPVAL   A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+   7 L372  MOVE       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   8 L372  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   9 L372  RETURN     A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  10 L373  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F30 params=0 vararg=0 ups=5 stack=4 lines=362-372 ncode=36 =====
+consts:
+  K0="grl"
+  K1="zero"
+  K2="gw"
+  K3=True
+code:
+   0 L363  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L363  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "grl"
+   2 L363  CALL       A=  0 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   3 L363  TEST       A=  0 B=   0 C=   1 Bx=     1 sBx=-131070
+   4 L363  JMP        A=  0 B= 256 C=   2 Bx=131074 sBx=      3 ; -> 8
+   5 L363  GETUPVAL   A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   6 L363  GETTABLE   A=  0 B=   0 C= 257 Bx=   257 sBx=-130814 ; R0 "zero"
+   7 L363  CALL       A=  0 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   8 L366  GETUPVAL   A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+   9 L366  LOADNIL    A=  2 B=   3 C=   0 Bx=  1536 sBx=-129535
+  10 L366  CALL       A=  1 B=   3 C=   2 Bx=  1538 sBx=-129533 ; nargs=2 nret=1
+  11 L366  TEST       A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  12 L366  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 15
+  13 L366  LOADBOOL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  14 L366  RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  15 L368  GETUPVAL   A=  1 B=   3 C=   0 Bx=  1536 sBx=-129535
+  16 L368  CALL       A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  17 L368  LT         A=  0 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  18 L368  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 21
+  19 L368  LOADBOOL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+  20 L368  RETURN     A=  1 B=   2 C=   0 Bx=  1024 sBx=-130047
+  21 L370  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  22 L370  GETTABLE   A=  1 B=   1 C= 258 Bx=   770 sBx=-130301 ; R1 "gw"
+  23 L370  CALL       A=  1 B=   1 C=   3 Bx=   515 sBx=-130556 ; nargs=0 nret=2
+  24 L371  GETUPVAL   A=  3 B=   4 C=   0 Bx=  2048 sBx=-129023
+  25 L371  GETTABLE   A=  3 B=   3 C=   1 Bx=  1537 sBx=-129534 ; R3 R1
+  26 L371  EQ         A=  1 B=   3 C= 259 Bx=  1795 sBx=-129276 ; R3 True
+  27 L371  JMP        A=  0 B= 256 C=   4 Bx=131076 sBx=      5 ; -> 33
+  28 L371  GETUPVAL   A=  3 B=   4 C=   0 Bx=  2048 sBx=-129023
+  29 L371  GETTABLE   A=  3 B=   3 C=   2 Bx=  1538 sBx=-129533 ; R3 R2
+  30 L371  EQ         A=  1 B=   3 C= 259 Bx=  1795 sBx=-129276 ; R3 True
+  31 L371  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 33
+  32 L371  LOADBOOL   A=  3 B=   0 C=   1 Bx=     1 sBx=-131070 ; False skip=1
+  33 L371  LOADBOOL   A=  3 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+  34 L371  RETURN     A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  35 L372  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F31 params=0 vararg=0 ups=2 stack=6 lines=376-394 ncode=18 =====
+consts:
+  K0="fade"
+  K1="one"
+  K2="zero"
+  K3="mmin"
+  K4="mmax"
+code:
+   0 L377  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L377  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "fade"
+   2 L378  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   3 L378  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "one"
+   4 L379  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   5 L379  GETTABLE   A=  2 B=   2 C= 258 Bx=  1282 sBx=-129789 ; R2 "zero"
+   6 L380  GETUPVAL   A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+   7 L380  GETTABLE   A=  3 B=   3 C= 259 Bx=  1795 sBx=-129276 ; R3 "mmin"
+   8 L381  GETUPVAL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+   9 L381  GETTABLE   A=  4 B=   4 C= 260 Bx=  2308 sBx=-128763 ; R4 "mmax"
+  10 L393  CLOSURE    A=  5 B=   0 C=   0 Bx=     0 sBx=-131071 ; F32
+  11 L393  MOVE       A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+  12 L393  MOVE       A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+  13 L393  MOVE       A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+  14 L393  MOVE       A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+  15 L393  MOVE       A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  16 L393  RETURN     A=  5 B=   2 C=   0 Bx=  1024 sBx=-130047
+  17 L394  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F32 params=3 vararg=0 ups=5 stack=7 lines=383-393 ncode=22 =====
+consts:
+code:
+   0 L384  GETUPVAL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L384  CALL       A=  3 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   2 L384  MUL        A=  3 B=   2 C=   3 Bx=  1027 sBx=-130044 ; R2 R3
+   3 L386  LT         A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   4 L386  JMP        A=  0 B= 256 C=   6 Bx=131078 sBx=      7 ; -> 12
+   5 L387  GETUPVAL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+   6 L387  GETUPVAL   A=  5 B=   2 C=   0 Bx=  1024 sBx=-130047
+   7 L387  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   8 L387  ADD        A=  6 B=   0 C=   3 Bx=     3 sBx=-131068 ; R0 R3
+   9 L387  TAILCALL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  10 L387  RETURN     A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  11 L387  JMP        A=  0 B= 256 C=   7 Bx=131079 sBx=      8 ; -> 20
+  12 L388  LT         A=  0 B=   1 C=   0 Bx=   512 sBx=-130559 ; R1 R0
+  13 L388  JMP        A=  0 B= 256 C=   5 Bx=131077 sBx=      6 ; -> 20
+  14 L389  GETUPVAL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  15 L389  GETUPVAL   A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+  16 L389  CALL       A=  5 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  17 L389  SUB        A=  6 B=   0 C=   3 Bx=     3 sBx=-131068 ; R0 R3
+  18 L389  TAILCALL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  19 L389  RETURN     A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  20 L392  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  21 L393  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F33 params=0 vararg=0 ups=3 stack=2 lines=400-405 ncode=27 =====
+consts:
+  K0="state"
+  K1="RUNNING"
+  K2="shader"
+  K3="screen"
+code:
+   0 L401  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L401  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "state"
+   2 L401  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L401  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "RUNNING"
+   4 L401  EQ         A=  1 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   5 L401  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 8
+   6 L401  LOADBOOL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+   7 L401  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   8 L402  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   9 L402  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  10 L402  GETTABLE   A=  1 B=   1 C= 258 Bx=   770 sBx=-130301 ; R1 "shader"
+  11 L402  CALL       A=  0 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  12 L402  TEST       A=  0 B=   0 C=   1 Bx=     1 sBx=-131070
+  13 L402  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 16
+  14 L402  LOADBOOL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  15 L402  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  16 L403  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  17 L403  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  18 L403  GETTABLE   A=  1 B=   1 C= 259 Bx=   771 sBx=-130300 ; R1 "screen"
+  19 L403  CALL       A=  0 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  20 L403  TEST       A=  0 B=   0 C=   1 Bx=     1 sBx=-131070
+  21 L403  JMP        A=  0 B= 256 C=   1 Bx=131073 sBx=      2 ; -> 24
+  22 L403  LOADBOOL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  23 L403  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  24 L404  LOADBOOL   A=  0 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+  25 L404  RETURN     A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  26 L405  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F34 params=1 vararg=0 ups=6 stack=8 lines=408-417 ncode=39 =====
+consts:
+  K0="llIIl"
+  K1="msec"
+  K2="one"
+  K3="zero"
+  K4="lIIll"
+  K5="ssv"
+  K6="shader"
+  K7="pInt"
+code:
+   0 L409  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L409  GETTABLE   A=  1 B=   1 C= 256 Bx=   768 sBx=-130303 ; R1 "llIIl"
+   2 L409  SUB        A=  1 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   3 L409  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+   4 L409  GETTABLE   A=  2 B=   2 C= 257 Bx=  1281 sBx=-129790 ; R2 "msec"
+   5 L409  CALL       A=  2 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   6 L409  DIV        A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; R1 R2
+   7 L410  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   8 L410  SETTABLE   A=  2 B= 256 C=   0 Bx=131072 sBx=      1 ; "llIIl" R0
+   9 L412  GETUPVAL   A=  2 B=   2 C=   0 Bx=  1024 sBx=-130047
+  10 L412  CALL       A=  2 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  11 L412  TEST       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  12 L412  JMP        A=  0 B= 256 C=   4 Bx=131076 sBx=      5 ; -> 18
+  13 L412  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  14 L412  GETTABLE   A=  2 B=   2 C= 258 Bx=  1282 sBx=-129789 ; R2 "one"
+  15 L412  CALL       A=  2 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  16 L412  TEST       A=  2 B=   0 C=   1 Bx=     1 sBx=-131070
+  17 L412  JMP        A=  0 B= 256 C=   2 Bx=131074 sBx=      3 ; -> 21
+  18 L412  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  19 L412  GETTABLE   A=  2 B=   2 C= 259 Bx=  1283 sBx=-129788 ; R2 "zero"
+  20 L412  CALL       A=  2 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+  21 L414  GETUPVAL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  22 L414  GETUPVAL   A=  4 B=   3 C=   0 Bx=  1536 sBx=-129535
+  23 L414  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+  24 L414  GETTABLE   A=  5 B=   5 C= 260 Bx=  2820 sBx=-128251 ; R5 "lIIll"
+  25 L414  MOVE       A=  6 B=   2 C=   0 Bx=  1024 sBx=-130047
+  26 L414  MOVE       A=  7 B=   1 C=   0 Bx=   512 sBx=-130559
+  27 L414  CALL       A=  4 B=   4 C=   2 Bx=  2050 sBx=-129021 ; nargs=3 nret=1
+  28 L414  SETTABLE   A=  3 B= 260 C=   4 Bx=133124 sBx=   2053 ; "lIIll" R4
+  29 L416  GETUPVAL   A=  3 B=   4 C=   0 Bx=  2048 sBx=-129023
+  30 L416  GETTABLE   A=  3 B=   3 C= 261 Bx=  1797 sBx=-129274 ; R3 "ssv"
+  31 L416  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  32 L416  GETTABLE   A=  4 B=   4 C= 262 Bx=  2310 sBx=-128761 ; R4 "shader"
+  33 L416  GETUPVAL   A=  5 B=   5 C=   0 Bx=  2560 sBx=-128511
+  34 L416  GETTABLE   A=  5 B=   5 C= 263 Bx=  2823 sBx=-128248 ; R5 "pInt"
+  35 L416  GETUPVAL   A=  6 B=   0 C=   0 Bx=     0 sBx=-131071
+  36 L416  GETTABLE   A=  6 B=   6 C= 260 Bx=  3332 sBx=-127739 ; R6 "lIIll"
+  37 L416  CALL       A=  3 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+  38 L417  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F35 params=1 vararg=0 ups=5 stack=7 lines=420-432 ncode=42 =====
+consts:
+  K0="msec"
+  K1="fps"
+  K2="lllII"
+  K3="lIlIl"
+  K4="textures"
+  K5=1
+  K6="ssv"
+  K7="shader"
+  K8="pTex"
+code:
+   0 L421  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L421  GETTABLE   A=  1 B=   1 C= 256 Bx=   768 sBx=-130303 ; R1 "msec"
+   2 L421  CALL       A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   3 L421  GETUPVAL   A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+   4 L421  GETTABLE   A=  2 B=   2 C= 257 Bx=  1281 sBx=-129790 ; R2 "fps"
+   5 L421  CALL       A=  2 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   6 L421  DIV        A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; R1 R2
+   7 L423  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+   8 L423  GETTABLE   A=  2 B=   2 C= 258 Bx=  1282 sBx=-129789 ; R2 "lllII"
+   9 L423  SUB        A=  2 B=   0 C=   2 Bx=     2 sBx=-131069 ; R0 R2
+  10 L423  LE         A=  0 B=   1 C=   2 Bx=   514 sBx=-130557 ; R1 R2
+  11 L423  JMP        A=  0 B= 256 C=  28 Bx=131100 sBx=     29 ; -> 41
+  12 L424  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  13 L424  GETUPVAL   A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+  14 L424  GETTABLE   A=  3 B=   3 C= 259 Bx=  1795 sBx=-129276 ; R3 "lIlIl"
+  15 L424  GETUPVAL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+  16 L424  GETTABLE   A=  4 B=   4 C= 260 Bx=  2308 sBx=-128763 ; R4 "textures"
+  17 L424  LEN        A=  4 B=   4 C=   0 Bx=  2048 sBx=-129023
+  18 L424  MOD        A=  3 B=   3 C=   4 Bx=  1540 sBx=-129531 ; R3 R4
+  19 L424  ADD        A=  3 B=   3 C= 261 Bx=  1797 sBx=-129274 ; R3 1
+  20 L424  SETTABLE   A=  2 B= 259 C=   3 Bx=132611 sBx=   1540 ; "lIlIl" R3
+  21 L425  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  22 L425  SETTABLE   A=  2 B= 258 C=   0 Bx=132096 sBx=   1025 ; "lllII" R0
+  23 L427  GETUPVAL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559
+  24 L427  GETTABLE   A=  2 B=   2 C= 260 Bx=  1284 sBx=-129787 ; R2 "textures"
+  25 L427  GETUPVAL   A=  3 B=   1 C=   0 Bx=   512 sBx=-130559
+  26 L427  GETTABLE   A=  3 B=   3 C= 259 Bx=  1795 sBx=-129276 ; R3 "lIlIl"
+  27 L427  GETTABLE   A=  2 B=   2 C=   3 Bx=  1027 sBx=-130044 ; R2 R3
+  28 L428  GETUPVAL   A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+  29 L428  MOVE       A=  4 B=   2 C=   0 Bx=  1024 sBx=-130047
+  30 L428  CALL       A=  3 B=   2 C=   2 Bx=  1026 sBx=-130045 ; nargs=1 nret=1
+  31 L428  TEST       A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  32 L428  JMP        A=  0 B= 256 C=   7 Bx=131079 sBx=      8 ; -> 41
+  33 L429  GETUPVAL   A=  3 B=   3 C=   0 Bx=  1536 sBx=-129535
+  34 L429  GETTABLE   A=  3 B=   3 C= 262 Bx=  1798 sBx=-129273 ; R3 "ssv"
+  35 L429  GETUPVAL   A=  4 B=   1 C=   0 Bx=   512 sBx=-130559
+  36 L429  GETTABLE   A=  4 B=   4 C= 263 Bx=  2311 sBx=-128760 ; R4 "shader"
+  37 L429  GETUPVAL   A=  5 B=   4 C=   0 Bx=  2048 sBx=-129023
+  38 L429  GETTABLE   A=  5 B=   5 C= 264 Bx=  2824 sBx=-128247 ; R5 "pTex"
+  39 L429  MOVE       A=  6 B=   2 C=   0 Bx=  1024 sBx=-130047
+  40 L429  CALL       A=  3 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+  41 L432  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F36 params=0 vararg=0 ups=3 stack=6 lines=435-446 ncode=26 =====
+consts:
+  K0="lIIll"
+  K1="drawEps"
+  K2="uss"
+  K3="screen"
+  K4="dim"
+  K5=0
+  K6="lIlII"
+  K7="lIIlI"
+  K8="shader"
+code:
+   0 L436  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L436  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "lIIll"
+   2 L436  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L436  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "drawEps"
+   4 L436  CALL       A=  1 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   5 L436  LE         A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   6 L436  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 8
+   7 L436  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   8 L438  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   9 L438  GETTABLE   A=  0 B=   0 C= 258 Bx=   258 sBx=-130813 ; R0 "uss"
+  10 L438  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  11 L438  GETTABLE   A=  1 B=   1 C= 259 Bx=   771 sBx=-130300 ; R1 "screen"
+  12 L438  LOADBOOL   A=  2 B=   1 C=   0 Bx=   512 sBx=-130559 ; True skip=0
+  13 L438  CALL       A=  0 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  14 L440  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+  15 L440  GETTABLE   A=  0 B=   0 C= 260 Bx=   260 sBx=-130811 ; R0 "dim"
+  16 L441  LOADK      A=  1 B=   0 C=   5 Bx=     5 sBx=-131066 ; 0
+  17 L441  LOADK      A=  2 B=   0 C=   5 Bx=     5 sBx=-131066 ; 0
+  18 L442  GETUPVAL   A=  3 B=   0 C=   0 Bx=     0 sBx=-131071
+  19 L442  GETTABLE   A=  3 B=   3 C= 262 Bx=  1798 sBx=-129273 ; R3 "lIlII"
+  20 L443  GETUPVAL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071
+  21 L443  GETTABLE   A=  4 B=   4 C= 263 Bx=  2311 sBx=-128760 ; R4 "lIIlI"
+  22 L444  GETUPVAL   A=  5 B=   0 C=   0 Bx=     0 sBx=-131071
+  23 L445  GETTABLE   A=  5 B=   5 C= 264 Bx=  2824 sBx=-128247 ; R5 "shader"
+  24 L440  CALL       A=  0 B=   6 C=   1 Bx=  3073 sBx=-127998 ; nargs=5 nret=0
+  25 L446  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F37 params=0 vararg=0 ups=2 stack=3 lines=449-457 ncode=21 =====
+consts:
+  K0=1
+  K1="gtc"
+  K2=2
+  K3=3
+  K4=4
+code:
+   0 L450  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L450  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 1
+   2 L450  CALL       A=  0 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   3 L450  TEST       A=  0 B=   0 C=   1 Bx=     1 sBx=-131070
+   4 L450  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 6
+   5 L450  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   6 L452  GETUPVAL   A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   7 L452  GETTABLE   A=  0 B=   0 C= 257 Bx=   257 sBx=-130814 ; R0 "gtc"
+   8 L452  CALL       A=  0 B=   1 C=   2 Bx=   514 sBx=-130557 ; nargs=0 nret=1
+   9 L454  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  10 L454  GETTABLE   A=  1 B=   1 C= 258 Bx=   770 sBx=-130301 ; R1 2
+  11 L454  MOVE       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  12 L454  CALL       A=  1 B=   2 C=   1 Bx=  1025 sBx=-130046 ; nargs=1 nret=0
+  13 L455  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  14 L455  GETTABLE   A=  1 B=   1 C= 259 Bx=   771 sBx=-130300 ; R1 3
+  15 L455  MOVE       A=  2 B=   0 C=   0 Bx=     0 sBx=-131071
+  16 L455  CALL       A=  1 B=   2 C=   1 Bx=  1025 sBx=-130046 ; nargs=1 nret=0
+  17 L456  GETUPVAL   A=  1 B=   0 C=   0 Bx=     0 sBx=-131071
+  18 L456  GETTABLE   A=  1 B=   1 C= 260 Bx=   772 sBx=-130299 ; R1 4
+  19 L456  CALL       A=  1 B=   1 C=   1 Bx=   513 sBx=-130558 ; nargs=0 nret=0
+  20 L457  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F38 params=0 vararg=0 ups=6 stack=6 lines=460-474 ncode=25 =====
+consts:
+  K0="state"
+  K1="RUNNING"
+  K2="aeh"
+  K3="evRender"
+  K4="root"
+  K5="low-999999999"
+code:
+   0 L461  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L461  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "state"
+   2 L461  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L461  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "RUNNING"
+   4 L461  EQ         A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+   5 L461  JMP        A=  0 B= 256 C=   0 Bx=131072 sBx=      1 ; -> 7
+   6 L461  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+   7 L463  GETUPVAL   A=  0 B=   2 C=   0 Bx=  1024 sBx=-130047
+   8 L463  CALL       A=  0 B=   1 C=   1 Bx=   513 sBx=-130558 ; nargs=0 nret=0
+   9 L465  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+  10 L465  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "state"
+  11 L465  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+  12 L465  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "RUNNING"
+  13 L465  EQ         A=  0 B=   0 C=   1 Bx=     1 sBx=-131070 ; R0 R1
+  14 L465  JMP        A=  0 B= 256 C=   8 Bx=131080 sBx=      9 ; -> 24
+  15 L466  GETUPVAL   A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+  16 L466  GETTABLE   A=  0 B=   0 C= 258 Bx=   258 sBx=-130813 ; R0 "aeh"
+  17 L467  GETUPVAL   A=  1 B=   4 C=   0 Bx=  2048 sBx=-129023
+  18 L467  GETTABLE   A=  1 B=   1 C= 259 Bx=   771 sBx=-130300 ; R1 "evRender"
+  19 L468  GETGLOBAL  A=  2 B=   0 C=   4 Bx=     4 sBx=-131067 ; 'root'
+  20 L469  GETUPVAL   A=  3 B=   5 C=   0 Bx=  2560 sBx=-128511
+  21 L470  LOADBOOL   A=  4 B=   0 C=   0 Bx=     0 sBx=-131071 ; False skip=0
+  22 L472  LOADK      A=  5 B=   0 C=   5 Bx=     5 sBx=-131066 ; "low-999999999"
+  23 L466  CALL       A=  0 B=   6 C=   1 Bx=  3073 sBx=-127998 ; nargs=5 nret=0
+  24 L474  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+===== F39 params=0 vararg=0 ups=5 stack=4 lines=477-481 ncode=14 =====
+consts:
+  K0="reh"
+  K1="evRender"
+  K2="root"
+  K3="Stopped"
+  K4=3
+code:
+   0 L478  GETUPVAL   A=  0 B=   0 C=   0 Bx=     0 sBx=-131071
+   1 L478  GETTABLE   A=  0 B=   0 C= 256 Bx=   256 sBx=-130815 ; R0 "reh"
+   2 L478  GETUPVAL   A=  1 B=   1 C=   0 Bx=   512 sBx=-130559
+   3 L478  GETTABLE   A=  1 B=   1 C= 257 Bx=   769 sBx=-130302 ; R1 "evRender"
+   4 L478  GETGLOBAL  A=  2 B=   0 C=   2 Bx=     2 sBx=-131069 ; 'root'
+   5 L478  GETUPVAL   A=  3 B=   2 C=   0 Bx=  1024 sBx=-130047
+   6 L478  CALL       A=  0 B=   4 C=   1 Bx=  2049 sBx=-129022 ; nargs=3 nret=0
+   7 L479  GETUPVAL   A=  0 B=   3 C=   0 Bx=  1536 sBx=-129535
+   8 L479  CALL       A=  0 B=   1 C=   1 Bx=   513 sBx=-130558 ; nargs=0 nret=0
+   9 L480  GETUPVAL   A=  0 B=   4 C=   0 Bx=  2048 sBx=-129023
+  10 L480  LOADK      A=  1 B=   0 C=   3 Bx=     3 sBx=-131068 ; "Stopped"
+  11 L480  LOADK      A=  2 B=   0 C=   4 Bx=     4 sBx=-131067 ; 3
+  12 L480  CALL       A=  0 B=   3 C=   1 Bx=  1537 sBx=-129534 ; nargs=2 nret=0
+  13 L481  RETURN     A=  0 B=   1 C=   0 Bx=   512 sBx=-130559
+leftover 520
